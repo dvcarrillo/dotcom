@@ -1,0 +1,84 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul {
+    padding: 0;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Document setup */
+@font-face {
+    font-family: PPGoshaSans;
+    src: url(PPGoshaSans-Ultralight.woff2) format("woff2");
+    font-display: fallback;
+}
+
+html {
+    font-size: 15px;
+    height: auto;
+    cursor: cell;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0px;
+}
+
+/* Styles */
+.page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-logo {
+    filter: invert(12%) sepia(99%) saturate(4742%) hue-rotate(244deg) brightness(87%) contrast(153%);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
