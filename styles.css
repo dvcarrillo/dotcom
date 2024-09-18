@@ -55,13 +55,20 @@ ul {
 html {
     font-size: 15px;
     height: auto;
-    cursor: cell;
     overflow: hidden;
+    font-family: PPGoshaSans;
+    box-sizing: border-box;
 }
 
 canvas {
     position: absolute;
     top: 0px;
+    cursor: cell;
+}
+
+h4 {
+    font-weight: 200;
+    font-size: 24px;
 }
 
 /* Styles */
@@ -81,4 +88,79 @@ canvas {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 8px 16px;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    background-color: blue;
+    color: white;
+    transition: 300ms;
+    opacity: 0;
+}
+
+#footer-text {
+    flex-grow: 99;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.button {
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    flex-grow: 1;
+    transition: 150ms;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.btn-outline {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: blue;
+    box-shadow: 10px;
+}
+
+.btn-primary {
+    background-color: white;
+    color: blue;
+}
+
+.btn-primary:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+#color-circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    background-color: rgb(162,250,163);
+    border: 1px solid white;
 }
