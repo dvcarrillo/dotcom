@@ -52,11 +52,17 @@ ul {
     font-display: fallback;
 }
 
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url(PPNeueMontreal-Regular.woff2) format("woff2");
+    font-display: fallback;
+}
+
 html {
     font-size: 15px;
     height: auto;
     overflow: hidden;
-    font-family: PPGoshaSans;
+    font-family: PPNeueMontreal;
     box-sizing: border-box;
 }
 
@@ -66,9 +72,15 @@ canvas {
     cursor: cell;
 }
 
-h4 {
+h5 {
     font-weight: 200;
-    font-size: 24px;
+    font-size: 18px;
+    color: rgba(15, 15, 25, 1);
+}
+
+p {
+    font-size: 14px;
+    color: rgb(120, 120, 120);
 }
 
 /* Styles */
@@ -77,6 +89,18 @@ h4 {
     height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.dotted {
+    --dot-bg: white;
+    --dot-color: rgba(200, 200, 200, 1);
+    --dot-size: 2px;
+    --dot-space: 32px;
+    background:
+    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+    transition: 2s ease-in-out;
 }
 
 .d-logo {
@@ -91,38 +115,51 @@ h4 {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    padding: 8px 16px;
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    max-width: 768px;
+    padding: 12px 18px 12px 28px;
     width: 100vw;
+    border: 1px solid rgba(220, 220, 220, 1);
     z-index: 100;
+    border-radius: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 16px;
-    background-color: blue;
-    color: white;
-    transition: 300ms;
-    opacity: 0;
+    background-color: white;
+    transition: 800ms ease-in-out;
+    box-shadow: 0 12px 18px -9px rgba(33, 33, 37, 0.16);
+    transform: translate(0, 200px);
 }
 
 #footer-text {
     flex-grow: 99;
 }
 
+.text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-grow: 1;
+}
+
 .button-group {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     flex-grow: 1;
 }
 
 .button {
     padding: 10px 16px;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 25px;
     flex-grow: 1;
-    transition: 150ms;
+    transition: 100ms ease-in-out;
     cursor: pointer;
     text-decoration: none;
     display: flex;
@@ -134,33 +171,45 @@ h4 {
 }
 
 .button:active {
-    transform: scale(0.95);
+    transform: scale(0.97);
 }
 
 .btn-outline {
-    border: 1px solid white;
+    border: 1px solid rgb(180, 180, 180);
     background-color: transparent;
 }
 
 .btn-outline:hover {
-    background-color: white;
-    color: blue;
+    background-color: rgb(248, 248, 248);
     box-shadow: 10px;
 }
 
 .btn-primary {
-    background-color: white;
-    color: blue;
+    background-color: blue;
+    color: white;
 }
 
 .btn-primary:hover {
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(0, 0, 200);
 }
 
 #color-circle {
     height: 16px;
     width: 16px;
     border-radius: 100%;
-    background-color: rgb(162,250,163);
-    border: 1px solid white;
+    background-color: rgb(162, 250, 163);
+    border: 1px solid rgba(15, 15, 25, 1);
+}
+
+/* Mobile-specific rules */
+@media screen and (max-width: 900px) {
+    .footer {
+        border-radius: 0px;
+        bottom: 0;
+        padding: 12px 24px 12px 24px;
+        margin-inline: 0;
+        max-width: 900px;
+    }
+
+
 }
