@@ -5,9 +5,12 @@
 
     --primary: rgba(15, 15, 25, 1);
     --secondary: rgba(120, 120, 120, 1);
+
     --border: rgba(180, 180, 180, 1);
     --border-70: rgba(180, 180, 180, 0.7);
     --border-30: rgba(180, 180, 180, 0.3);
+
+    --fill: rgba(245, 245, 245, 1);
     --shadow: rgba(33, 33, 37, 0.16);
 }
 
