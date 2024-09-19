@@ -95,6 +95,8 @@ p {
 }
 
 .button {
+    display: flex;
+    justify-content: center;
     padding: 10px 16px;
     font-size: 16px;
     border-radius: 25px;
@@ -102,7 +104,6 @@ p {
     transition: 100ms ease-in-out;
     cursor: pointer;
     text-decoration: none;
-    display: flex;
     align-items: center;
     gap: 8px;
     -webkit-user-select: none;
