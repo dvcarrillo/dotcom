@@ -1,65 +1,6 @@
-/* CSS RESET */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-ul {
-    padding: 0;
-}
-
-#root,
-#__next {
-    isolation: isolate;
-}
-
-/* Document setup */
-@font-face {
-    font-family: PPGoshaSans;
-    src: url(PPGoshaSans-Ultralight.woff2) format("woff2");
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: PPNeueMontreal;
-    src: url(PPNeueMontreal-Regular.woff2) format("woff2");
-    font-display: fallback;
-}
+/* DOCUMENT STYLES */
 
 html {
-    font-size: 15px;
     height: auto;
     overflow: hidden;
     font-family: PPNeueMontreal;
@@ -73,14 +14,15 @@ canvas {
 }
 
 h5 {
-    font-weight: 200;
     font-size: 18px;
-    color: rgba(15, 15, 25, 1);
+    font-weight: 500;
+    color: var(--primary);
 }
 
 p {
     font-size: 14px;
-    color: rgb(120, 120, 120);
+    font-weight: 400;
+    color: var(--secondary);
 }
 
 /* Styles */
@@ -92,14 +34,12 @@ p {
 }
 
 .dotted {
-    --dot-bg: white;
-    --dot-color: rgba(200, 200, 200, 1);
     --dot-size: 2px;
     --dot-space: 32px;
     background:
-    linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-    var(--dot-color);
+        linear-gradient(90deg, var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--border-70);
     transition: 2s ease-in-out;
 }
 
@@ -123,7 +63,7 @@ p {
     max-width: 768px;
     padding: 12px 18px 12px 28px;
     width: 100vw;
-    border: 1px solid rgba(220, 220, 220, 1);
+    border: 1px solid var(--border-30);
     z-index: 100;
     border-radius: 50px;
     display: flex;
@@ -131,9 +71,9 @@ p {
     align-items: center;
     flex-wrap: wrap;
     row-gap: 16px;
-    background-color: white;
+    background-color: var(--background);
     transition: 800ms ease-in-out;
-    box-shadow: 0 12px 18px -9px rgba(33, 33, 37, 0.16);
+    box-shadow: 0 12px 18px -9px var(--shadow);
     transform: translate(0, 200px);
 }
 
@@ -175,8 +115,8 @@ p {
 }
 
 .btn-outline {
-    border: 1px solid rgb(180, 180, 180);
-    background-color: white;
+    border: 1px solid var(--border);
+    background-color: var(--background);
 }
 
 .btn-outline:hover {
@@ -184,12 +124,13 @@ p {
 }
 
 .btn-primary {
-    background-color: blue;
-    color: white;
+    background-color: var(--accent);
+    color: var(--background);
+    font-weight: 500;
 }
 
 .btn-primary:hover {
-    background-color: rgb(0, 0, 200);
+    background-color: var(--accent);
 }
 
 #color-circle {
@@ -197,7 +138,7 @@ p {
     width: 16px;
     border-radius: 100%;
     background-color: rgb(162, 250, 163);
-    border: 1px solid rgba(15, 15, 25, 1);
+    border: 1px solid var(--primary);
 }
 
 /* Mobile-specific rules */
@@ -216,7 +157,7 @@ p {
     }
 
     .btn-primary:hover {
-        background-color: blue;
+        background-color: var(--accent);
     }
-    
+
 }

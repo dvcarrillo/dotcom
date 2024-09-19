@@ -1,0 +1,27 @@
+/* COLORS */
+:root {
+    --accent: rgba(0, 0, 255, 1);
+    --background: rgba(255, 255, 255, 1);
+
+    --primary: rgba(15, 15, 25, 1);
+    --secondary: rgba(120, 120, 120, 1);
+    --border: rgba(180, 180, 180, 1);
+    --border-70: rgba(180, 180, 180, 0.7);
+    --border-30: rgba(180, 180, 180, 0.3);
+    --shadow: rgba(33, 33, 37, 0.16);
+}
+
+/* FONT SETUP */
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url(typefaces/PPNeueMontreal-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url(typefaces/PPNeueMontreal-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-display: fallback;
+}
