@@ -205,6 +205,7 @@ p {
     .footer {
         border-radius: 0px;
         bottom: 0;
+        border-width: 1px 0 0 0;
         padding: 12px 24px 12px 24px;
         margin-inline: 0;
         max-width: 900px;
