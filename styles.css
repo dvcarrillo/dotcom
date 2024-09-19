@@ -176,12 +176,11 @@ p {
 
 .btn-outline {
     border: 1px solid rgb(180, 180, 180);
-    background-color: transparent;
+    background-color: white;
 }
 
 .btn-outline:hover {
     background-color: rgb(248, 248, 248);
-    box-shadow: 10px;
 }
 
 .btn-primary {
@@ -202,7 +201,7 @@ p {
 }
 
 /* Mobile-specific rules */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .footer {
         border-radius: 0px;
         bottom: 0;
@@ -211,5 +210,12 @@ p {
         max-width: 900px;
     }
 
+    .btn-outline:hover {
+        background-color: white;
+    }
 
+    .btn-primary:hover {
+        background-color: blue;
+    }
+    
 }
