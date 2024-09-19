@@ -34,12 +34,12 @@ p {
 }
 
 .dotted {
-    --dot-size: 2px;
-    --dot-space: 32px;
+    --dot-size: 4px;
+    --dot-space: 24px;
     background:
         linear-gradient(90deg, var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         linear-gradient(var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        var(--border-70);
+        var(--border-20);
     transition: 2s ease-in-out;
 }
 
