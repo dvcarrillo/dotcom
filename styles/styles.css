@@ -115,13 +115,14 @@ p {
 
 .btn-primary {
     background-color: var(--accent);
-    color: var(--background);
+    color: var(--primary-alt);
     font-weight: 500;
 }
 
 .btn-default {
     border: 1px solid var(--border-40);
     background-color: var(--background);
+    color: var(--primary);
 }
 
 .btn-default:hover {
