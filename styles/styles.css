@@ -53,7 +53,7 @@ p {
     background:
         linear-gradient(90deg, var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         linear-gradient(var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        var(--fill);
+        var(--light);
     transition: 2s ease-in-out;
 }
 
