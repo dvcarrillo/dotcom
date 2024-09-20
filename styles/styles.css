@@ -24,6 +24,16 @@ p {
     color: var(--secondary);
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 /* STYLES */
 /* Canvas */
 .page {
@@ -33,25 +43,18 @@ p {
     align-items: center;
 }
 
+#d-logo{
+    fill: var(--accent);
+}
+
 .dotted {
     --dot-size: 4px;
     --dot-space: 24px;
     background:
         linear-gradient(90deg, var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         linear-gradient(var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        var(--border-20);
+        var(--fill);
     transition: 2s ease-in-out;
-}
-
-.d-logo {
-    filter: invert(12%) sepia(99%) saturate(4742%) hue-rotate(244deg) brightness(87%) contrast(153%);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
 }
 
 /* Page elements */
@@ -104,8 +107,12 @@ p {
     text-decoration: none;
     gap: 8px;
     /* Disable selection */
+    -webkit-touch-callout: none;
     -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
+    -o-user-select: none;
     user-select: none;
 }
 
@@ -121,7 +128,6 @@ p {
 
 .btn-default {
     border: 1px solid var(--border-40);
-    background-color: var(--background);
     color: var(--primary);
 }
 
