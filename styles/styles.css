@@ -154,6 +154,10 @@ p {
 
 /* MOBILE-SPECIFIC */
 @media screen and (max-width: 768px) {
+    #d-logo {
+        margin-bottom: 15vh;
+    }
+
     .footer {
         border-radius: 23px;
         padding: 12px 18px;
