@@ -2,7 +2,7 @@
 /* Light theme */
 :root,
 [data-theme="light"] {
-    --accent: rgba(38, 38, 239, 1);
+    --accent: rgba(0, 44, 229, 1);
     --background: rgba(255, 255, 255, 1);
 
     --primary: rgba(15, 15, 20, 1);
