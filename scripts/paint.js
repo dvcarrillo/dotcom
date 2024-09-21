@@ -15,6 +15,7 @@ function mouseDragged() {
     if (!drawing) {
         document.getElementById("footer").style.transform = "translate(0,0)";
         document.getElementById("page-canvas").classList.add("dotted");
+        document.getElementById("fadeout").style.opacity = 0;
     }
 }
 
