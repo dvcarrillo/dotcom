@@ -41,25 +41,22 @@ p {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: var(--background);
 }
 
-#d-logo{
+#d-logo {
     fill: var(--accent);
 }
 
 .dotted {
-    --dot-size: 4px;
-    --dot-space: 24px;
-    background:
-        linear-gradient(90deg, var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        linear-gradient(var(--background) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        var(--light);
+    background: radial-gradient(circle at 2.5px 2.5px, var(--light) 2.5px, var(--background) 0);
+    background-size: 32px 32px;
     transition: 2s ease-in-out;
 }
 
 /* Page elements */
 .footer {
-    background-color: var(--background);
+    background-color: var(--component-background);
     position: fixed;
     bottom: 12px;
     left: 0;
