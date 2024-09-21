@@ -2,15 +2,15 @@
 /* Light theme */
 :root,
 [data-theme="light"] {
-    --accent: rgba(0, 0, 255, 1);
+    --accent: rgba(38, 38, 239, 1);
     --background: rgba(255, 255, 255, 1);
-    
+
     --primary: rgba(15, 15, 20, 1);
     --primary-alt: rgba(255, 255, 255, 1);
     --secondary: rgba(120, 120, 125, 1);
 
     --component-background: rgba(255, 255, 255, 1);
-    
+
     --border: rgba(180, 180, 185, 1);
     --border-70: rgba(180, 180, 185, 0.7);
     --border-40: rgba(180, 180, 185, 0.4);
@@ -24,23 +24,23 @@
 
 /* Dark theme */
 [data-theme="dark"] {
-    --accent: rgba(233, 228, 222, 1);
-    --background: rgba(20, 20, 25, 1);
+    --accent: rgba(224, 219, 211, 1);
+    --background: rgba(10, 10, 15, 1);
 
     --primary: rgba(255, 255, 255, 1);
-    --primary-alt: rgba(15, 15, 20, 1);
+    --primary-alt: rgba(5, 5, 10, 1);
     --secondary: rgba(165, 165, 170, 1);
 
-    --component-background: rgba(32, 32, 37, 1);
+    --component-background: rgba(20, 20, 25, 1);
 
-    --border: rgba(100, 100, 105, 1);
-    --border-70: rgba(100, 100, 105, 0.7);
-    --border-40: rgba(100, 100, 105, 0.4);
-    --border-30: rgba(100, 100, 105, 0.3);
-    --border-20: rgba(100, 100, 105, 0.2);
+    --border: rgba(80, 80, 85, 1);
+    --border-70: rgba(80, 80, 85, 0.7);
+    --border-40: rgba(80, 80, 85, 0.4);
+    --border-30: rgba(80, 80, 85, 0.3);
+    --border-20: rgba(80, 80, 85, 0.2);
 
-    --fill: rgba(42, 42, 47, 1);
-    --light: rgba(30, 30, 33, 1);
+    --fill: rgba(32, 32, 37, 1);
+    --light: rgba(20, 20, 25, 1);
     --shadow: rgba(33, 33, 37, 0.16);
 }
 
