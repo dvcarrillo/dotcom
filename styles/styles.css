@@ -86,7 +86,7 @@ p {
     width: 100vw;
     background-color: var(--background);
     opacity: 1;
-    transition: 800ms ease-out;
+    transition: 1200ms ease-in-out;
     z-index: 2;
 }
 
