@@ -13,7 +13,6 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#002ce5",
     "background_color": "#002ce5",
     "start_url": "https://www.dvcarrillo.com",
     "display": "standalone"
