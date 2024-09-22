@@ -155,7 +155,7 @@ p {
 /* MOBILE-SPECIFIC */
 @media screen and (max-width: 768px) {
     #d-logo {
-        margin-bottom: 15vh;
+        margin-bottom: 10vh;
     }
 
     .footer {
