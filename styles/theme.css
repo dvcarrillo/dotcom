@@ -24,7 +24,7 @@
 
 /* Dark theme */
 [data-theme="dark"] {
-    --accent: rgba(224, 219, 211, 1);
+    --accent: rgba(234, 229, 223, 1);
     --background: rgba(10, 10, 15, 1);
 
     --primary: rgba(255, 255, 255, 1);
