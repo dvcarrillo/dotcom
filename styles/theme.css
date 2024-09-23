@@ -47,8 +47,8 @@
 /* FONT SETUP */
 @font-face {
     font-family: PPNeueMontreal;
-    src: url(typefaces/PPNeueMontreal-Book.woff2) format("woff2");
-    font-weight: 400;
+    src: url(typefaces/PPNeueMontreal-Regular.woff2) format("woff2");
+    font-weight: 450;
     font-display: fallback;
 }
 
