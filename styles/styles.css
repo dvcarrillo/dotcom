@@ -16,13 +16,13 @@ canvas {
 h5 {
     font-size: 18px;
     font-weight: 530;
-    color: var(--primary);
+    color: var(--color-text-primary);
 }
 
 p {
     font-size: 14px;
     font-weight: 450;
-    color: var(--secondary);
+    color: var(--color-text-secondary);
 }
 
 .unselectable {
@@ -42,22 +42,22 @@ p {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--background);
+    background-color: var(--color-bg);
 }
 
 #d-logo {
-    fill: var(--accent);
+    fill: var(--color-accent);
     z-index: 3;
 }
 
 .dotted {
-    background: radial-gradient(circle at 2.5px 2.5px, var(--light) 2.5px, var(--background) 0);
+    background: radial-gradient(circle at 2.5px 2.5px, var(--color-light) 2.5px, var(--color-bg) 0);
     background-size: 32px 32px;
 }
 
 /* Page elements */
 .action-bar {
-    background-color: var(--component-background);
+    background-color: var(--color-bg-surface);
     position: fixed;
     bottom: 12px;
     left: 0;
@@ -66,7 +66,7 @@ p {
     width: 720px;
     max-width: calc(100vw - 8px * 2);
     padding: 12px 18px 12px 24px;
-    border: 1px solid var(--border-30);
+    border: 1px solid var(--color-border-30);
     z-index: 5;
     border-radius: 50px;
     display: flex;
@@ -74,7 +74,7 @@ p {
     align-items: center;
     flex-wrap: wrap;
     row-gap: 12px;
-    box-shadow: 0 12px 18px -9px var(--shadow);
+    box-shadow: 0 12px 18px -9px var(--color-shadow);
     transition: 800ms ease-in-out;
     transform: translate(0, 200px);
 }
@@ -84,7 +84,7 @@ p {
     top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: var(--background);
+    background-color: var(--color-bg);
     opacity: 1;
     transition: 1200ms ease-in-out;
     z-index: 2;
@@ -130,18 +130,18 @@ p {
 }
 
 .btn-primary {
-    background-color: var(--accent);
-    color: var(--primary-alt);
+    background-color: var(--color-accent);
+    color: var(--color-text-primary-alt);
     font-weight: 530;
 }
 
 .btn-default {
-    border: 1px solid var(--border-40);
-    color: var(--primary);
+    border: 1px solid var(--color-border-40);
+    color: var(--color-text-primary);
 }
 
 .btn-default:hover {
-    background-color: var(--fill);
+    background-color: var(--color-bg-fill);
 }
 
 #color-circle {
@@ -149,7 +149,7 @@ p {
     width: 16px;
     border-radius: 100%;
     background-color: rgb(162, 250, 163);
-    border: 1px solid var(--primary);
+    border: 1px solid var(--color-text-primary);
 }
 
 /* MOBILE-SPECIFIC */
@@ -168,6 +168,6 @@ p {
     }
 
     .btn-primary:hover {
-        background-color: var(--accent);
+        background-color: var(--color-accent);
     }
 }
