@@ -2,14 +2,11 @@
 /* Light theme */
 :root,
 [data-theme="light"] {
+    /* Old palette -- to be removed */
     --color-accent: rgba(0, 44, 229, 1);
     --color-bg: rgba(250, 250, 250, 1);
     --color-bg-surface: rgba(255, 255, 255, 1);
     --color-bg-fill: rgba(245, 245, 245, 1);
-
-    --color-text-primary: rgba(15, 15, 15, 1);
-    --color-text-primary-alt: rgba(255, 255, 255, 1);
-    --color-text-secondary: rgba(120, 120, 120, 1);
 
     --color-border: rgba(180, 180, 180, 1);
     --color-border-70: rgba(180, 180, 180, 0.7);
@@ -19,18 +16,40 @@
 
     --color-light: rgba(240, 240, 240, 1);
     --color-shadow: rgba(33, 33, 33, 0.16);
+
+    /* New palette */
+    --color-core-primary: #181818;
+    --color-core-accent: #007BFF;
+
+    --color-text-primary: #181818;
+    --color-text-secondary: #495057;
+    --color-text-primary-alt: #FAFAFA;
+
+    --color-fill-background: #FAFAFA;
+    --color-fill-surface: #F0F1F2;
+    --color-fill-background-alt: #181818;
+
+    --color-border-primary-100: #181818;
+    --color-border-primary-25: #18181825;
+
+    --color-interaction-btn-primary-hover: #0062CC;
+    --color-interaction-btn-primary-active: #0050A3;
+    --color-interaction-btn-primary-disabled: #B3B3B3;
+    --color-interaction-btn-outline-hover: #21252908;
+    --color-interaction-btn-outline-active: #21252923;
+    --color-interaction-btn-outline-disabled: #21252908;
+    --color-interaction-btn-flat-hover: #007BFF08;
+    --color-interaction-btn-flat-active: #007BFF25;
+    --color-interaction-btn-flat-disabled: #007BFF08;
 }
 
 /* Dark theme */
 [data-theme="dark"] {
+    /* Old palette -- to be removed */
     --color-accent: rgba(234, 229, 223, 1);
     --color-bg: rgba(10, 10, 15, 1);
     --color-bg-surface: rgba(20, 20, 25, 1);
     --color-bg-fill: rgba(32, 32, 37, 1);
-
-    --color-text-primary: rgba(255, 255, 255, 1);
-    --color-text-primary-alt: rgba(5, 5, 10, 1);
-    --color-text-secondary: rgba(165, 165, 170, 1);
 
     --color-border: rgba(80, 80, 85, 1);
     --color-border-70: rgba(80, 80, 85, 0.7);
@@ -40,6 +59,31 @@
 
     --color-light: rgba(25, 25, 30, 1);
     --color-shadow: rgba(33, 33, 37, 0.16);
+
+    /* New palette */
+    --color-core-primary: #E0E0E0;
+    --color-core-accent: #55A8F9;
+
+    --color-text-primary: #E0E0E0;
+    --color-text-secondary: #9FA3A8;
+    --color-text-primary-alt: #0F0F0F;
+
+    --color-fill-background: #0F0F0F;
+    --color-fill-surface: #2C2C2C;
+    --color-fill-background-alt: #0F0F0F;
+
+    --color-border-primary-100: #EBE5DF;
+    --color-border-primary-25: #D9D9D925;
+
+    --color-interaction-btn-primary-hover: #0062CC;
+    --color-interaction-btn-primary-active: #0050A3;
+    --color-interaction-btn-primary-disabled: #B3B3B3;
+    --color-interaction-btn-outline-hover: #21252948;
+    --color-interaction-btn-outline-active: #21252988;
+    --color-interaction-btn-outline-disabled: #21252948;
+    --color-interaction-btn-flat-hover: #55A8F918;
+    --color-interaction-btn-flat-active: #55A8F938;
+    --color-interaction-btn-flat-disabled: #55A8F918;
 }
 
 /* FONT SETUP */
@@ -47,6 +91,15 @@
     font-family: PPNeueMontreal;
     src: url(typefaces/PPNeueMontreal-Regular.woff2) format("woff2");
     font-weight: 450;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: PPNeueMontreal;
+    src: url(typefaces/PPNeueMontreal-Italic.woff2) format("woff2");
+    font-weight: 450;
+    font-style: italic;
     font-display: fallback;
 }
 
@@ -54,5 +107,137 @@
     font-family: PPNeueMontreal;
     src: url(typefaces/PPNeueMontreal-Medium.woff2) format("woff2");
     font-weight: 530;
+    font-style: normal;
     font-display: fallback;
+}
+
+@font-face {
+    font-family: PPFraktionMono;
+    src: url(typefaces/PPFraktionMono-Regular.woff2) format("woff2");
+    font-weight: 390;
+    font-style: normal;
+    font-display: fallback;
+}
+
+/* TYPOGRAPHY */
+body {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.005em;
+    color: var(--color-text-primary);
+}
+
+/* Headings */
+h1 {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 530;
+    font-size: 61px;
+    line-height: 61px;
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary)
+}
+
+h2 {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 530;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.025em;
+    color: var(--color-text-primary)
+}
+
+h3 {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 530;
+    font-size: 39px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary)
+}
+
+h4 {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 530;
+    font-size: 31px;
+    line-height: 34px;
+    letter-spacing: -0.015em;
+    color: var(--color-text-primary)
+}
+
+h5 {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 530;
+    font-size: 25px;
+    line-height: 27px;
+    letter-spacing: -0.01em;
+    color: var(--color-text-primary)
+}
+
+h6 {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 530;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.005em;
+    color: var(--color-text-primary)
+}
+
+/* Paragraphs */
+p {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.005em;
+    color: var(--color-text-primary)
+}
+
+p.large {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: var(--color-text-primary)
+}
+
+p.xlarge {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 450;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: var(--color-text-primary)
+}
+
+p.small,
+small {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 450;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: var(--color-text-primary)
+}
+
+p.xsmall {
+    font-family: PPNeueMontreal, sans-serif;
+    font-weight: 450;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.005em;
+    color: var(--color-text-primary)
+}
+
+/* Text modifiers */
+.text-italic,
+em {
+    font-style: italic;
+}
+
+.text-medium,
+strong {
+    font-weight: 530;
 }
