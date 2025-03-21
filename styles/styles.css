@@ -19,11 +19,6 @@ h5 {
     color: var(--color-text-primary);
 }
 
-p {
-    font-size: 14px;
-    font-weight: 450;
-    color: var(--color-text-secondary);
-}
 
 .unselectable {
     -webkit-touch-callout: none;
@@ -50,11 +45,6 @@ p {
     z-index: 3;
 }
 
-.dotted {
-    background: radial-gradient(circle at 2.5px 2.5px, var(--color-light) 2.5px, var(--color-bg) 0);
-    background-size: 32px 32px;
-}
-
 /* Page elements */
 .action-bar {
     background-color: var(--color-bg-surface);
@@ -75,8 +65,6 @@ p {
     flex-wrap: wrap;
     row-gap: 12px;
     box-shadow: 0 12px 18px -9px var(--color-shadow);
-    transition: 800ms ease-in-out;
-    transform: translate(0, 200px);
 }
 
 #fadeout {

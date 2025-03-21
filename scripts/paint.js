@@ -14,7 +14,6 @@ function mouseDragged() {
     line(pmouseX, pmouseY, mouseX, mouseY);
     if (!drawing) {
         document.getElementById("action-bar").style.transform = "translate(0,0)";
-        document.getElementById("page-canvas").classList.add("dotted");
         document.getElementById("fadeout").style.opacity = 0;
     }
 }
