@@ -12,10 +12,6 @@ function setup() {
 function mouseDragged() {
     stroke(R, G, B);
     line(pmouseX, pmouseY, mouseX, mouseY);
-    if (!drawing) {
-        document.getElementById("action-bar").style.transform = "translate(0,0)";
-        document.getElementById("fadeout").style.opacity = 0;
-    }
 }
 
 function windowResized() {
