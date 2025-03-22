@@ -19,12 +19,12 @@
     --color-interaction-btn-primary-hover: #0062CC;
     --color-interaction-btn-primary-active: #0050A3;
     --color-interaction-btn-primary-disabled: #B3B3B3;
-    --color-interaction-btn-outline-hover: #21252908;
-    --color-interaction-btn-outline-active: #21252923;
-    --color-interaction-btn-outline-disabled: #21252908;
-    --color-interaction-btn-flat-hover: #007BFF08;
+    --color-interaction-btn-outline-hover: #21252910;
+    --color-interaction-btn-outline-active: #21252925;
+    --color-interaction-btn-outline-disabled: #21252910;
+    --color-interaction-btn-flat-hover: #007BFF10;
     --color-interaction-btn-flat-active: #007BFF25;
-    --color-interaction-btn-flat-disabled: #007BFF08;
+    --color-interaction-btn-flat-disabled: #21252910;
 }
 
 /* Dark theme */
@@ -51,7 +51,7 @@
     --color-interaction-btn-outline-disabled: #21252948;
     --color-interaction-btn-flat-hover: #55A8F918;
     --color-interaction-btn-flat-active: #55A8F938;
-    --color-interaction-btn-flat-disabled: #55A8F918;
+    --color-interaction-btn-flat-disabled: #21252948;
 }
 
 /* FONT SETUP */

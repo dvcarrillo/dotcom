@@ -1,0 +1,151 @@
+/* VARIABLES */
+:root {
+    --btn-padding: 8px 16px;
+    --btn-border-radius: 9999px;
+    --btn-font-size: 16px;
+    --btn-font-weight: 530;
+    --btn-icon-size: 21px;
+    --btn-lg-padding: 12px 22px;
+    --btn-lg-font-size: 20px;
+    --btn-transition: background-color 0.3s, transform 0.1s ease-in-out;
+    --btn-transform-active: scale(0.98);
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 16px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-start {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.navbar-end {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* BUTTONS */
+/* Common */
+.btn {
+    padding: var(--btn-padding);
+    border-radius: var(--btn-border-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    cursor: pointer;
+    transition: var(--btn-transition);
+    box-shadow: none;
+    border: none;
+    white-space: nowrap;
+    min-width: fit-content;
+}
+
+.btn:active {
+    transform: var(--btn-transform-active);
+    transform-origin: center;
+}
+
+.btn:focus {
+    outline: 2px solid var(--color-core-accent);
+    outline-offset: 2px;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    transition: none;
+    transform: none;
+}
+
+/* Primary button */
+.btn-primary {
+    background-color: var(--color-core-accent);
+    color: var(--color-text-primary-alt);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-interaction-btn-primary-hover);
+}
+
+.btn-primary:active {
+    background-color: var(--color-interaction-btn-primary-active);
+}
+
+.btn-primary:disabled {
+    background-color: var(--color-interaction-btn-primary-disabled);
+    color: var(--color-text-primary);
+}
+
+/* Outline button */
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--color-border-primary-25);
+    color: var(--color-text-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-interaction-btn-outline-hover);
+}
+
+.btn-outline:active {
+    background-color: var(--color-interaction-btn-outline-active);
+}
+
+.btn-outline:disabled {
+    background-color: var(--color-interaction-btn-outline-disabled);
+    color: var(--color-text-primary);
+}
+
+/* Flat button */
+.btn-flat {
+    background-color: transparent;
+    color: var(--color-core-accent);
+}
+
+.btn-flat:hover {
+    background-color: var(--color-interaction-btn-flat-hover);
+}
+
+.btn-flat:active {
+    background-color: var(--color-interaction-btn-flat-active);
+}
+
+.btn-flat:disabled {
+    background-color: var(--color-interaction-btn-flat-disabled);
+    color: var(--color-text-primary);
+}
+
+/* Icon button */
+.btn-icon {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.btn-icon svg {
+    width: var(--btn-icon-size);
+    height: var(--btn-icon-size);
+}
+
+.btn-icon:active {
+    transform: none;
+}
+
+/* Button modifiers */
+.btn-lg {
+    font-size: var(--btn-lg-font-size);
+    padding: var(--btn-lg-padding);
+}
+
+.btn-full {
+    width: 100%;
+}

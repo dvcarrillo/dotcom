@@ -1,1 +1,14 @@
-/* GLOBAL STYLES */
+html {
+    /* -webkit-font-smoothing: antialiased; */
+}
+
+body {
+    background-color: var(--color-fill-background);
+}
+
+/* COMMON */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
