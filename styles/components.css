@@ -16,6 +16,10 @@
 /* NAVBAR */
 .navbar {
     padding: 16px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .navbar .container {
@@ -166,7 +170,7 @@
 
 /* LINKS */
 .link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 1px;
 }

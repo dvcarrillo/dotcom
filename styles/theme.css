@@ -98,7 +98,8 @@ body {
 }
 
 /* Headings */
-h1 {
+h1,
+.h1 {
     font-family: PPNeueMontreal, sans-serif;
     font-weight: 530;
     font-size: 61px;
@@ -107,7 +108,8 @@ h1 {
     color: var(--color-text-primary)
 }
 
-h2 {
+h2,
+.h2 {
     font-family: PPNeueMontreal, sans-serif;
     font-weight: 530;
     font-size: 48px;
@@ -116,7 +118,8 @@ h2 {
     color: var(--color-text-primary)
 }
 
-h3 {
+h3,
+.h3 {
     font-family: PPNeueMontreal, sans-serif;
     font-weight: 530;
     font-size: 39px;
@@ -125,7 +128,8 @@ h3 {
     color: var(--color-text-primary)
 }
 
-h4 {
+h4,
+.h4 {
     font-family: PPNeueMontreal, sans-serif;
     font-weight: 530;
     font-size: 31px;
@@ -134,7 +138,8 @@ h4 {
     color: var(--color-text-primary)
 }
 
-h5 {
+h5,
+.h5 {
     font-family: PPNeueMontreal, sans-serif;
     font-weight: 530;
     font-size: 25px;
@@ -143,7 +148,8 @@ h5 {
     color: var(--color-text-primary)
 }
 
-h6 {
+h6,
+.h6 {
     font-family: PPNeueMontreal, sans-serif;
     font-weight: 530;
     font-size: 20px;
@@ -212,7 +218,7 @@ strong {
 
 /* Text color utilities */
 .text-primary {
-    color: var(--color-text-primary)!important;
+    color: var(--color-text-primary) !important;
 }
 
 .text-secondary {
