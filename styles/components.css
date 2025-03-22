@@ -7,19 +7,17 @@
     --btn-icon-size: 21px;
     --btn-lg-padding: 12px 22px;
     --btn-lg-font-size: 20px;
+    --btn-lg-letter-spacing: -0.01em;
     --btn-transition: background-color 0.3s, transform 0.1s ease-in-out;
     --btn-transform-active: scale(0.98);
-
-    --badge-border-radius: 9999px;
 }
 
 /* NAVBAR */
 .navbar {
-    padding: 16px 0;
     position: absolute;
+    padding: 16px 0;
     top: 0;
     width: 100%;
-    z-index: 100;
 }
 
 .navbar .container {
@@ -149,6 +147,7 @@
 /* Button modifiers */
 .btn-lg {
     font-size: var(--btn-lg-font-size);
+    letter-spacing: var(--btn-lg-letter-spacing);
     padding: var(--btn-lg-padding);
 }
 
@@ -159,10 +158,11 @@
 /* BADGE */
 .badge {
     display: inline-block;
-    padding: 1px 8px;
-    border-radius: var(--badge-border-radius);
+    padding: 3px 8px;
+    border-radius: 9999px;
+    font-weight: 450;
     font-size: 13px;
-    font-weight: 530;
+    line-height: 16px;
     letter-spacing: 0em;
     background-color: var(--color-fill-surface);
     color: var(--color-text-secondary);

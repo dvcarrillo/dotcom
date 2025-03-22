@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Component sandbox</title>
+  <title>Sandbox</title>
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/theme.css">
@@ -38,10 +38,16 @@
     gap: 1rem;
     align-items: center;
   }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 </style>
 
 <body>
-  <h1>Component sandbox</h1>
+  <h1>Sandbox</h1>
   <div class="component-preview">
     <h4>Buttons</h4>
     <div class="row">
@@ -51,6 +57,12 @@
       <button class="btn btn-outline">outline</button>
       <!-- Flat button -->
       <button class="btn btn-flat">flat</button>
+      <!-- Primary button LG -->
+      <button class="btn btn-lg btn-primary">primary</button>
+      <!-- Outline button LG  -->
+      <button class="btn btn-lg btn-outline">outline</button>
+      <!-- Flat button LG -->
+      <button class="btn btn-lg btn-flat">flat</button>
       <!-- Icon button (primary) -->
       <button class="btn btn-primary btn-icon">
         <i data-feather="x"></i>
@@ -59,6 +71,29 @@
       <button class="btn btn-flat btn-icon">
         <i data-feather="plus"></i>
       </button>
+    </div>
+    <h4>Buttons (as links)</h4>
+    <div class="row">
+      <!-- Primary button -->
+      <a class="btn btn-primary">primary</a>
+      <!-- Outline button -->
+      <a class="btn btn-outline">outline</a>
+      <!-- Flat button -->
+      <a class="btn btn-flat">flat</a>
+      <!-- Primary button LG -->
+      <a class="btn btn-lg btn-primary">primary</a>
+      <!-- Outline button LG  -->
+      <a class="btn btn-lg btn-outline">outline</a>
+      <!-- Flat button LG -->
+      <a class="btn btn-lg btn-flat">flat</a>
+      <!-- Icon button (primary) -->
+      <a class="btn btn-primary btn-icon">
+        <i data-feather="x"></i>
+      </a>
+      <!-- Icon button (flat) -->
+      <a class="btn btn-flat btn-icon">
+        <i data-feather="plus"></i>
+      </a>
     </div>
     <h4>Badges</h4>
     <div class="row">
@@ -83,6 +118,19 @@
       <!-- Link (secondary) underline -->
       <a class="text-secondary underline" href="#">secondary link</a>
     </div>
+    <h4>Typography</h4>
+    <div class="column">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p>Paragraph</p>
+      <span>Free text</span>
+      <p class="text-secondary">Secondary paragraph</p>
+      <small>Small text</small>
+      <p class="xsmall">Xsmall text</p>
   </div>
 </body>
 
