@@ -209,3 +209,32 @@ em {
 strong {
     font-weight: 530;
 }
+
+/* Text color utilities */
+.text-primary {
+    color: var(--color-text-primary)!important;
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+/* LINKS */
+a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a.underline {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--color-text-primary);
+}
+
+a:focus {
+    outline: 2px solid var(--color-core-accent);
+    outline-offset: 2px;
+}

@@ -9,6 +9,8 @@
     --btn-lg-font-size: 20px;
     --btn-transition: background-color 0.3s, transform 0.1s ease-in-out;
     --btn-transform-active: scale(0.98);
+
+    --badge-border-radius: 9999px;
 }
 
 /* NAVBAR */
@@ -148,4 +150,29 @@
 
 .btn-full {
     width: 100%;
+}
+
+/* BADGE */
+.badge {
+    display: inline-block;
+    padding: 1px 8px;
+    border-radius: var(--badge-border-radius);
+    font-size: 13px;
+    font-weight: 530;
+    letter-spacing: 0em;
+    background-color: var(--color-fill-surface);
+    color: var(--color-text-secondary);
+}
+
+/* LINKS */
+.link {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.link img {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
 }
