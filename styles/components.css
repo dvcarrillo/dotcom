@@ -55,6 +55,10 @@
     min-width: fit-content;
 }
 
+.btn:hover {
+    text-decoration: none;
+}
+
 .btn:active {
     transform: var(--btn-transform-active);
     transform-origin: center;
@@ -173,6 +177,9 @@
     display: inline-flex;
     align-items: center;
     gap: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 
 .link img {

@@ -110,15 +110,6 @@
     gap: 2px;
 }
 
-.works-item .works-item-title-container .link {
-    display: inline-flex; /* Alinear el texto y el ícono en una sola línea */
-    align-items: center; /* Centrar verticalmente el ícono con el texto */
-    gap: 4px; /* Espaciado entre el texto y el ícono */
-    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
-    overflow: hidden; /* Evitar desbordamientos */
-    text-overflow: ellipsis; /* Agregar puntos suspensivos si el texto es demasiado largo */
-}
-
 .works-item .works-item-title-container .link img {
     width: 22px;
     height: 22px;
