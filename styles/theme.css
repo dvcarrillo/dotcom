@@ -12,22 +12,22 @@
 
     --color-fill-background: #FAFAFA;
     --color-fill-surface: #F0F1F2;
-    --color-fill-surface-warning: #E08F0005;
+    --color-fill-surface-warning: #e08f000d;
     --color-fill-background-alt: #181818;
 
     --color-border-primary-100: #181818;
-    --color-border-primary-25: #18181825;
-    --color-border-warning-25: #E08F0025;
+    --color-border-primary-25: #18181840;
+    --color-border-warning-25: #E08F0040;
 
     --color-interaction-btn-primary-hover: #0062CC;
     --color-interaction-btn-primary-active: #0050A3;
     --color-interaction-btn-primary-disabled: #B3B3B3;
-    --color-interaction-btn-outline-hover: #21252910;
-    --color-interaction-btn-outline-active: #21252925;
-    --color-interaction-btn-outline-disabled: #21252910;
-    --color-interaction-btn-flat-hover: #007BFF10;
-    --color-interaction-btn-flat-active: #007BFF25;
-    --color-interaction-btn-flat-disabled: #21252910;
+    --color-interaction-btn-outline-hover: #2125290d;
+    --color-interaction-btn-outline-active: #21252940;
+    --color-interaction-btn-outline-disabled: #2125290d;
+    --color-interaction-btn-flat-hover: #007bff1a;
+    --color-interaction-btn-flat-active: #007BFF40;
+    --color-interaction-btn-flat-disabled: transparent;
 }
 
 /* Dark theme */
@@ -42,22 +42,22 @@
 
     --color-fill-background: #0F0F0F;
     --color-fill-surface: #2C2C2C;
-    --color-fill-surface-warning: #F8A72005;
+    --color-fill-surface-warning: #F8A7200d;
     --color-fill-background-alt: #0F0F0F;
 
     --color-border-primary-100: #EBE5DF;
-    --color-border-primary-25: #D9D9D925;
-    --color-border-warning-25: #F8A72025;
+    --color-border-primary-25: #D9D9D940;
+    --color-border-warning-25: #F8A72040;
 
     --color-interaction-btn-primary-hover: #0062CC;
     --color-interaction-btn-primary-active: #0050A3;
     --color-interaction-btn-primary-disabled: #B3B3B3;
-    --color-interaction-btn-outline-hover: #21252948;
-    --color-interaction-btn-outline-active: #21252988;
-    --color-interaction-btn-outline-disabled: #21252948;
-    --color-interaction-btn-flat-hover: #55A8F918;
-    --color-interaction-btn-flat-active: #55A8F938;
-    --color-interaction-btn-flat-disabled: #21252948;
+    --color-interaction-btn-outline-hover: #2125297a;
+    --color-interaction-btn-outline-active: #212529e0;
+    --color-interaction-btn-outline-disabled: #2125297a;
+    --color-interaction-btn-flat-hover: #55A8F92e;
+    --color-interaction-btn-flat-active: #55A8F961;
+    --color-interaction-btn-flat-disabled: transparent;
 }
 
 /* FONT SETUP */

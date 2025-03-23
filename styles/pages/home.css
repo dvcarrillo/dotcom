@@ -97,8 +97,8 @@
     text-decoration: underline;
 }
 
-.works-item:hover img {
-    filter: brightness(0.93);
+.works-item:hover .works-item-cover img {
+    filter: brightness(0.90);
 }
 
 .works-item .works-item-cover {
@@ -131,6 +131,10 @@
     justify-content: center;
     align-items: center;
     padding: 8px 0 12px 0;
+}
+
+[data-theme="dark"] .handle-container {
+    filter: invert(1);
 }
 
 .bottom-actions {
