@@ -14,7 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
     display: flex;
     align-items: center;
@@ -29,9 +29,13 @@
 }
 
 #signature {
-    max-width: 461px;
+    width: 85%;
     height: auto;
     margin: -18px 0 -16px -5px;
+}
+
+[data-theme="dark"] #signature {
+    filter: invert(1);
 }
 
 .hero-description ul {
@@ -41,25 +45,144 @@
 /* PAGE */
 .page {
     position: relative;
-    margin-top: 95vh;
+    margin-top: 92vh;
     z-index: 2;
     background-color: var(--color-fill-background);
-    border-top: 2px solid var(--color-border-primary-100);
-    padding: 16px 0 16px 0;
 }
 
-.page h1 {
-    color: red;
+/* SECTIONS */
+.section {
+    position: relative;
+    border-top: 2px solid var(--color-border-primary-100);
+    padding-bottom: 56px;
+}
+
+.section-title {
+    position: relative;
     position: sticky;
     top: 0;
+    padding: 42px 0;
+    z-index: 2;
+}
+
+.section-title-large {
+    padding-right: 68%;
+}
+
+.section-title-small {
+    display: none;
+}
+
+.section-content {
+    position: relative;
+    padding-top: 42px;
+    padding-left: 32%;
+    z-index: 3;
+}
+
+/* WORKS */
+.works-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.works-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.works-item .works-item-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 2px;
+}
+
+.works-item .works-item-cover img {
+    border-radius: 12px;
+}
+
+.works-item .works-item-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.works-item .works-item-title-container .link {
+    display: inline-flex; /* Alinear el texto y el ícono en una sola línea */
+    align-items: center; /* Centrar verticalmente el ícono con el texto */
+    gap: 4px; /* Espaciado entre el texto y el ícono */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+    overflow: hidden; /* Evitar desbordamientos */
+    text-overflow: ellipsis; /* Agregar puntos suspensivos si el texto es demasiado largo */
+}
+
+.works-item .works-item-title-container .link img {
+    width: 22px;
+    height: 22px;
+}
+
+.works-item.works-item-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* SPECIFICS */
+.handle-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0 12px 0;
+}
+
+.bottom-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 42px;
 }
 
 /* RESPONSIVE */
+/* Mobile devices */
+@media (max-width:768px) {
+
+    /* Bring up the page for mobile devices */
+    .page {
+        margin-top: 83vh;
+    }
+
+    /* Adapt section titles */
+    .section-title {
+        padding: 24px 0;
+        border-bottom: 2px solid var(--color-border-primary-100);
+        background-color: var(--color-fill-background);
+        z-index: 4;
+    }
+
+    .section-title-large {
+        display: none;
+    }
+
+    .section-title-small {
+        display: block;
+    }
+
+    /* Adapt section content */
+    .section-content {
+        padding-left: 0;
+    }
+}
+
+/* Under container-small */
 @media (max-width: 558px) {
     #signature {
-        max-width: 100%;
+        width: 95%;
         margin-top: 0;
-        /* Ajusta márgenes en pantallas pequeñas */
         margin-left: 0;
     }
 }

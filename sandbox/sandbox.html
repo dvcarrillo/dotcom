@@ -23,6 +23,15 @@
 <style>
   body {
     padding: 1rem;
+    margin-bottom: 5rem;
+    background-color: var(--color-fill-background);
+  }
+
+  .title {
+    width: 100%;
+    padding: 12px 16px;
+    color: var(--color-text-secondary);
+    background-color: var(--color-fill-surface);
   }
 
   .component-preview {
@@ -37,19 +46,21 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    padding: 0 16px;
   }
 
   .column {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 0 16px;
   }
 </style>
 
 <body>
   <h1>Sandbox</h1>
   <div class="component-preview">
-    <h4>Buttons</h4>
+    <h4 class="title">Buttons</h4>
     <div class="row">
       <!-- Primary button -->
       <button class="btn btn-primary">primary</button>
@@ -72,7 +83,7 @@
         <i data-feather="plus"></i>
       </button>
     </div>
-    <h4>Buttons (as links)</h4>
+    <h4 class="title">Buttons (as links)</h4>
     <div class="row">
       <!-- Primary button -->
       <a class="btn btn-primary">primary</a>
@@ -95,17 +106,17 @@
         <i data-feather="plus"></i>
       </a>
     </div>
-    <h4>Badges</h4>
+    <h4 class="title">Badges</h4>
     <div class="row">
       <span class="badge">badge</span>
     </div>
-    <h4>Links</h4>
+    <h4 class="title">Links</h4>
     <div class="row">
       <!-- Link -->
       <a href="#">link</a>
       <!-- Link (new tab) -->
       <a href="#" class="link" target="_blank">link in new tab
-        <img src="/assets/icons/new_tab.svg" alt="Open in new tab" class="icon-inline">
+        <img src="/assets/icons/new_tab.svg" alt="Open in new tab">
       </a>
       <!-- Link (secondary) -->
       <a class="text-secondary" href="#">secondary link</a>
@@ -113,12 +124,12 @@
       <a class="underline" href="#">link</a>
       <!-- Link (new tab) underline -->
       <a href="#" class="link underline" target="_blank">link in new tab
-        <img src="/assets/icons/new_tab.svg" alt="Open in new tab" class="icon-inline">
+        <img src="/assets/icons/new_tab.svg" alt="Open in new tab">
       </a>
       <!-- Link (secondary) underline -->
       <a class="text-secondary underline" href="#">secondary link</a>
     </div>
-    <h4>Typography</h4>
+    <h4 class="title">Typography</h4>
     <div class="column">
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>

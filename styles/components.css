@@ -41,6 +41,8 @@
 /* BUTTONS */
 /* Common */
 .btn {
+    display: flex;
+    justify-content: center;
     padding: var(--btn-padding);
     border-radius: var(--btn-border-radius);
     font-size: var(--btn-font-size);
@@ -130,8 +132,6 @@
 
 /* Icon button */
 .btn-icon {
-    display: flex;
-    justify-content: center;
     padding: 8px;
 }
 
@@ -176,7 +176,12 @@
 }
 
 .link img {
-    width: 17px;
-    height: 17px;
+    max-width: none;
+    width: 18px;
+    height: 18px;
     vertical-align: middle;
+}
+
+[data-theme="dark"] .link img {
+    filter: invert(1);
 }
