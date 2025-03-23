@@ -8,13 +8,16 @@
     --color-text-primary: #181818;
     --color-text-secondary: #495057;
     --color-text-primary-alt: #FAFAFA;
+    --color-text-warning: #E08F00;
 
     --color-fill-background: #FAFAFA;
     --color-fill-surface: #F0F1F2;
+    --color-fill-surface-warning: #E08F0005;
     --color-fill-background-alt: #181818;
 
     --color-border-primary-100: #181818;
     --color-border-primary-25: #18181825;
+    --color-border-warning-25: #E08F0025;
 
     --color-interaction-btn-primary-hover: #0062CC;
     --color-interaction-btn-primary-active: #0050A3;
@@ -35,13 +38,16 @@
     --color-text-primary: #E0E0E0;
     --color-text-secondary: #9FA3A8;
     --color-text-primary-alt: #0F0F0F;
+    --color-text-warning: #F8A720;
 
     --color-fill-background: #0F0F0F;
     --color-fill-surface: #2C2C2C;
+    --color-fill-surface-warning: #F8A72005;
     --color-fill-background-alt: #0F0F0F;
 
     --color-border-primary-100: #EBE5DF;
     --color-border-primary-25: #D9D9D925;
+    --color-border-warning-25: #F8A72025;
 
     --color-interaction-btn-primary-hover: #0062CC;
     --color-interaction-btn-primary-active: #0050A3;
@@ -208,12 +214,12 @@ p.xsmall {
 /* Text modifiers */
 .text-italic,
 em {
-    font-style: italic;
+    font-style: italic !important;
 }
 
 .text-medium,
 strong {
-    font-weight: 530;
+    font-weight: 530 !important;
 }
 
 /* Text color utilities */
@@ -223,6 +229,10 @@ strong {
 
 .text-secondary {
     color: var(--color-text-secondary);
+}
+
+.text-warning {
+    color: var(--color-text-warning);
 }
 
 /* LINKS */

@@ -93,26 +93,29 @@
     gap: 8px;
 }
 
+.works-item:hover a {
+    text-decoration: underline;
+}
+
+.works-item:hover img {
+    filter: brightness(0.93);
+}
+
 .works-item .works-item-cover {
     width: 100%;
     height: auto;
     border-radius: 12px;
-    margin-bottom: 2px;
 }
 
 .works-item .works-item-cover img {
     border-radius: 12px;
+    transition: filter 0.3s ease;
 }
 
 .works-item .works-item-title-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;;
     gap: 2px;
-}
-
-.works-item .works-item-title-container .link img {
-    width: 22px;
-    height: 22px;
 }
 
 .works-item.works-item-badge-container {
@@ -170,7 +173,7 @@
 }
 
 /* Under container-small */
-@media (max-width: 558px) {
+@media (max-width: 574px) {
     #signature {
         width: 95%;
         margin-top: 0;

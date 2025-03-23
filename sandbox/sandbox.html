@@ -47,6 +47,7 @@
     gap: 1rem;
     align-items: center;
     padding: 0 16px;
+    width: 100%;
   }
 
   .column {
@@ -54,6 +55,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 0 16px;
+    width: 100%;
   }
 </style>
 
@@ -116,7 +118,7 @@
       <a href="#">link</a>
       <!-- Link (new tab) -->
       <a href="#" class="link" target="_blank">link in new tab
-        <img src="/assets/icons/new_tab.svg" alt="Open in new tab">
+        <img src="/assets/icons/new_tab.svg" alt="Open in new tab" draggable="false">
       </a>
       <!-- Link (secondary) -->
       <a class="text-secondary" href="#">secondary link</a>
@@ -124,10 +126,78 @@
       <a class="underline" href="#">link</a>
       <!-- Link (new tab) underline -->
       <a href="#" class="link underline" target="_blank">link in new tab
-        <img src="/assets/icons/new_tab.svg" alt="Open in new tab">
+        <img src="/assets/icons/new_tab.svg" alt="Open in new tab" draggable="false">
       </a>
       <!-- Link (secondary) underline -->
       <a class="text-secondary underline" href="#">secondary link</a>
+    </div>
+    <h4 class="title">Cards</h4>
+    <div class="column">
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-action">
+            <a class="btn btn-flat btn-icon">
+              <i data-feather="plus"></i>
+            </a>
+          </div>
+          <div class="card-header">
+            <div class="card-header-left">
+              <p class="card-title text-medium">Product designer</p>
+              <p class="text-secondary">Societe Generale</p>
+            </div>
+            <div class="card-header-right">
+              <p class="text-secondary">Present</p>
+              <p class="text-secondary">Paris</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-content hidden">
+          <p class="text-secondary">Societe Generale is one of the leading European financial services groups. I am part
+            of the Product Design team at Societe Generale Corporate & Investment Banking (SGCIB).</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-action">
+            <a class="btn btn-primary btn-icon">
+              <i data-feather="x"></i>
+            </a>
+          </div>
+          <div class="card-header">
+            <div class="card-header-left">
+              <p class="card-title text-medium">Product designer</p>
+              <p class="text-secondary">Societe Generale</p>
+            </div>
+            <div class="card-header-right">
+              <p class="text-secondary">Present</p>
+              <p class="text-secondary">Paris</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="text-secondary">Societe Generale is one of the leading European financial services groups. I am part
+            of the Product Design team at Societe Generale Corporate & Investment Banking (SGCIB).</p>
+        </div>
+      </div>
+
+      <div class="card card-warning">
+        <div class="card-top">
+          <div class="card-icon">
+            <i data-feather="tool" width="21" height="21"></i>
+          </div>
+          <div class="card-header">
+            <div class="card-header-left">
+              <p class="card-title text-medium">This section is under construction</p>
+              <p class="text-secondary">I'm currently updating this section with my latest projects. This includes
+                creating a dedicated portfolio page to showcase these projects and their details. In the meantime, if
+                you're interested in learning more about my recent work, feel free to reach out to me directly!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <h4 class="title">Typography</h4>
     <div class="column">
@@ -142,7 +212,7 @@
       <p class="text-secondary">Secondary paragraph</p>
       <small>Small text</small>
       <p class="xsmall">Xsmall text</p>
-  </div>
+    </div>
 </body>
 
 </html>

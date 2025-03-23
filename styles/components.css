@@ -10,6 +10,25 @@
     --btn-lg-letter-spacing: -0.01em;
     --btn-transition: background-color 0.3s, transform 0.1s ease-in-out;
     --btn-transform-active: scale(0.98);
+
+    --badge-padding: 3px 8px;
+    --badge-border-radius: 9999px;
+    --badge-font-weight: 450;
+    --badge-font-size: 13px;
+    --badge-line-height: 16px;
+    --badge-letter-spacing: 0em;
+    --badge-bg-color: var(--color-fill-surface);
+    --badge-text-color: var(--color-text-secondary);
+    
+    --card-padding: 12px 16px 12px 12px;
+    --card-border-radius: 12px;
+    --card-gap: 8px;
+    --card-header-gap: 8px;
+    --card-header-left-gap: 4px;
+    --card-content-padding-left: 45px;
+    --card-warning-bg: var(--color-fill-surface-warning);
+    --card-warning-border: var(--color-border-warning-25);
+    --card-warning-text: var(--color-text-warning);
 }
 
 /* NAVBAR */
@@ -53,6 +72,7 @@
     border: none;
     white-space: nowrap;
     min-width: fit-content;
+    user-select: none;
 }
 
 .btn:hover {
@@ -159,17 +179,23 @@
     width: 100%;
 }
 
+/* Adaptations for links using button classes */
+a.btn {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
 /* BADGE */
 .badge {
     display: inline-block;
-    padding: 3px 8px;
-    border-radius: 9999px;
-    font-weight: 450;
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: 0em;
-    background-color: var(--color-fill-surface);
-    color: var(--color-text-secondary);
+    padding: var(--badge-padding);
+    border-radius: var(--badge-border-radius);
+    font-weight: var(--badge-font-weight);
+    font-size: var(--badge-font-size);
+    line-height: var(--badge-line-height);
+    letter-spacing: var(--badge-letter-spacing);
+    background-color: var(--badge-bg-color);
+    color: var(--badge-text-color);
 }
 
 /* LINKS */
@@ -179,7 +205,7 @@
     gap: 1px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
 }
 
 .link img {
@@ -191,4 +217,91 @@
 
 [data-theme="dark"] .link img {
     filter: invert(1);
+}
+
+/* CARDS */
+/* Base card */
+.card {
+    background-color: var(--color-fill-surface);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-gap);
+}
+
+.card-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-action {
+    flex-shrink: 0;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--card-header-gap);
+    min-width: 0;
+}
+
+.card-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-header-left-gap);
+    flex: 1;
+    min-width: 0;
+}
+
+.card-header-left p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-header-right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-header-left-gap);
+    text-align: right;
+    flex-shrink: 0;
+    min-width: fit-content;
+}
+
+.card-content {
+    padding-left: var(--card-content-padding-left);
+}
+
+/* Card warning */
+.card-warning {
+    background-color: var(--card-warning-bg);
+    border: 1px solid var(--card-warning-border);
+    color: var(--card-warning-text);
+}
+
+.card-warning .card-title {
+    color: inherit;
+}
+
+.card-warning .card-header {
+    color: inherit;
+}
+
+.card-warning .card-header-left p {
+    overflow: initial;
+    text-overflow: initial;
+    white-space: normal;
+}
+
+.card-icon {
+    padding: 8px;
+    color: var(--card-warning-text);
 }

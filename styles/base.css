@@ -1,5 +1,6 @@
 body {
     background-color: var(--color-fill-background);
+    -webkit-font-smoothing: antialiased;
 }
 
 /* COMMON */
@@ -10,7 +11,7 @@ body {
 }
 
 .container-small {
-    max-width: 558px;
+    max-width: 574px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -23,4 +24,8 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+}
+
+.hidden {
+    display: none;
 }
