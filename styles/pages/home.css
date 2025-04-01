@@ -61,7 +61,7 @@
     position: relative;
     position: sticky;
     top: 0;
-    padding: 42px 0;
+    padding: 42px 0 24px 0;
     z-index: 2;
 }
 
@@ -78,15 +78,24 @@
     padding-top: 42px;
     padding-left: 32%;
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+/* SUBSECTIONS */
+.subsection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subsection-title {
+    padding-bottom: 12px;
 }
 
 /* WORKS */
-.works-container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
 .works-item {
     display: flex;
     flex-direction: column;
