@@ -229,6 +229,11 @@ strong {
     color: var(--color-text-primary) !important;
 }
 
+.text-primary-alt {
+    color: var(--color-text-primary-alt) !important;
+}
+
+
 .text-secondary {
     color: var(--color-text-secondary);
 }

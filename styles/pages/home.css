@@ -123,7 +123,8 @@
 
 .works-item .works-item-title-container {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    ;
     gap: 2px;
 }
 
@@ -131,6 +132,19 @@
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-fill-background-alt);
+}
+
+.footer-title {
+    padding: 42px 0 24px 0;
+}
+
+.footer-title-small {
+    display: none;
 }
 
 /* SPECIFICS */
@@ -177,6 +191,19 @@
 
     .section-title-small {
         display: block;
+    }
+
+    /* Adapt footer title */
+    .footer-title {
+        padding: 24px 0;
+    }
+
+    .footer-title-small {
+        display: block;
+    }
+
+    .footer-title-large {
+        display: none;
     }
 
     /* Adapt section content */
