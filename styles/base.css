@@ -30,6 +30,7 @@ body {
     display: none;
 }
 
+/* Borders */
 .bordered-100 {
     border: 1px solid var(--color-border-primary-100);
 }
@@ -40,4 +41,9 @@ body {
 
 .bordered-10 {
     border: 1px solid var(--color-border-primary-10);
+}
+
+/* Color modifiers */
+.bg-alt {
+    background-color: var(--color-fill-background-alt);
 }

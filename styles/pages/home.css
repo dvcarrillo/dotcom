@@ -124,7 +124,6 @@
 .works-item .works-item-title-container {
     display: flex;
     flex-direction: column;
-    ;
     gap: 2px;
 }
 
@@ -134,17 +133,21 @@
     gap: 4px;
 }
 
-/* FOOTER */
-footer {
-    background-color: var(--color-fill-background-alt);
-}
-
-.footer-title {
+/* CONTACT */
+.contact-title {
     padding: 42px 0 24px 0;
 }
 
-.footer-title-small {
+.contact-title-small {
     display: none;
+}
+
+.contact-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0 32px 0;
 }
 
 /* SPECIFICS */
@@ -194,15 +197,15 @@ footer {
     }
 
     /* Adapt footer title */
-    .footer-title {
+    .contact-title {
         padding: 24px 0;
     }
 
-    .footer-title-small {
+    .contact-title-small {
         display: block;
     }
 
-    .footer-title-large {
+    .contact-title-large {
         display: none;
     }
 

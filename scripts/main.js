@@ -9,4 +9,4 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
 // Load Feather icons
 document.addEventListener("DOMContentLoaded", function () {
     feather.replace();
-  });
+});
