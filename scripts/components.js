@@ -4,26 +4,33 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener('click', function () {
             const card = button.closest('.card');
             const content = card.querySelector('.card-content');
-            const icon = button.querySelector('svg'); // Buscar el <svg> generado por Feather.js
+            const description = content.querySelector('p');
+            const icon = button.querySelector('svg');
 
-            // Toggle the hidden class
-            content.classList.toggle('hidden');
-
-            // Update the icon and button class
+            // Check if the icon is present
             if (icon) {
-                if (content.classList.contains('hidden')) {
+                // Card expansion
+                if (description.classList.contains('hidden')) {
+                    icon.setAttribute('data-feather', 'x');
+                    button.classList.add('btn-primary');
+                    button.classList.remove('btn-flat');
+                    description.style.opacity = '1';
+                    content.style.maxHeight = '400px';
+                }
+                // Card collapse
+                else {
                     icon.setAttribute('data-feather', 'plus');
                     button.classList.remove('btn-primary');
                     button.classList.add('btn-flat');
-                } else {
-                    icon.setAttribute('data-feather', 'x');
-                    button.classList.remove('btn-flat');
-                    button.classList.add('btn-primary');
+                    description.style.opacity = '0';
+                    content.style.maxHeight = '0px';
                 }
-
-                // Re-render Feather icons
-                feather.replace();
+                // Toggle the hidden class
+                description.classList.toggle('hidden');
+                // Replace the icon
+                feather.replace({ 'svg': icon });
             }
+
         });
     });
 });

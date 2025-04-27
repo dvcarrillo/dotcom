@@ -27,7 +27,8 @@ body {
 }
 
 .hidden {
-    display: none;
+    opacity: 0;
+    visibility: none;
 }
 
 /* Borders */
