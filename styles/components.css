@@ -22,9 +22,9 @@
 
     --card-padding: 12px 16px 12px 12px;
     --card-border-radius: 12px;
-    --card-gap: 8px;
     --card-header-gap: 8px;
     --card-header-left-gap: 4px;
+    --card-content-gap: 8px;
     --card-content-padding-left: 45px;
     --card-warning-bg: var(--color-fill-surface-warning);
     --card-warning-border: var(--color-border-warning-25);
@@ -259,7 +259,7 @@ a.btn {
     padding: var(--card-padding);
     display: flex;
     flex-direction: column;
-    gap: var(--card-gap);
+    gap: 0px;
 }
 
 .card-top {
@@ -310,11 +310,19 @@ a.btn {
 
 .card-content {
     padding-left: var(--card-content-padding-left);
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
 }
 
-/* Card warning */
+.card-content p {
+    margin-top: var(--card-content-gap);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
 .card-warning {
     background-color: var(--card-warning-bg);
+    /* Card warning */
     border: 1px solid var(--card-warning-border);
     color: var(--card-warning-text);
 }

@@ -28,7 +28,7 @@ body {
 
 .hidden {
     opacity: 0;
-    visibility: none;
+    visibility: collapse;
 }
 
 /* Borders */
