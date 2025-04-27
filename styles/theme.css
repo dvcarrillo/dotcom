@@ -38,15 +38,15 @@
 
     --color-text-primary: #E0E0E0;
     --color-text-secondary: #9FA3A8;
-    --color-text-primary-alt: #0F0F0F;
+    --color-text-primary-alt: #E0E0E0;
     --color-text-warning: #F8A720;
 
     --color-fill-background: #0F0F0F;
     --color-fill-surface: #2C2C2C;
     --color-fill-surface-warning: #F8A7200d;
-    --color-fill-background-alt: #FAFAFA;
+    --color-fill-background-alt: #1F1F1F;
 
-    --color-border-primary-100: #EBE5DF;
+    --color-border-primary-100: #403E3C;
     --color-border-primary-25: #D9D9D940;
     --color-border-primary-10: #D9D9D91a;
     --color-border-warning-25: #F8A72040;
