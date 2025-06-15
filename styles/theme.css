@@ -20,6 +20,7 @@
     --color-border-primary-10: #1818181a;
     --color-border-warning-25: #E08F0040;
 
+    --color-interaction-fill-surface-hover: #E4E5E5;
     --color-interaction-btn-primary-hover: #0062CC;
     --color-interaction-btn-primary-active: #0050A3;
     --color-interaction-btn-primary-disabled: #B3B3B3;
@@ -51,6 +52,7 @@
     --color-border-primary-10: #D9D9D91a;
     --color-border-warning-25: #F8A72040;
 
+    --color-interaction-fill-surface-hover: #3B3B3B;
     --color-interaction-btn-primary-hover: #DB2777;
     --color-interaction-btn-primary-active: #BE185D;
     --color-interaction-btn-primary-disabled: #B3B3B3;
