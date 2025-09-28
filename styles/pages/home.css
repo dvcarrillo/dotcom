@@ -65,6 +65,10 @@
     z-index: 2;
 }
 
+.section-subtitle {
+    margin-top: 12px;
+}
+
 .section-title-large {
     padding-right: 68%;
 }
