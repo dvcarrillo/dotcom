@@ -65,16 +65,14 @@
     z-index: 2;
 }
 
-.section-subtitle {
-    margin-top: 12px;
-}
-
 .section-title-large {
     padding-right: 68%;
+    margin-bottom: 12px;
 }
 
 .section-title-small {
     display: none;
+    margin-bottom: 4px;
 }
 
 .section-content {

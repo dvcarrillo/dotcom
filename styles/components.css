@@ -39,10 +39,11 @@
     width: 100%;
 }
 
-.navbar .container {
+.navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 16px;
 }
 
 .navbar-start {
