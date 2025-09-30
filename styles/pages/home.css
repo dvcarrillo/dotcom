@@ -125,7 +125,6 @@
 .works-item .works-item-cover {
     width: 100%;
     height: auto;
-    max-height: 480px;
     border-radius: 12px;
     background-color: var(--color-fill-surface);
     display: flex;
@@ -139,7 +138,9 @@
 
 .works-item .works-item-cover img {
     width: 90%;
-    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
     border-radius: 12px;
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(28px);
