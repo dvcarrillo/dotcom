@@ -58,7 +58,6 @@
 }
 
 .section-title {
-    position: relative;
     position: sticky;
     top: 0;
     padding: 42px 0 24px 0;

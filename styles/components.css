@@ -244,6 +244,12 @@ a.btn {
     vertical-align: middle;
 }
 
+.link img.lg {
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
+}
+
 [data-theme="dark"] .link img {
     filter: invert(1);
 }
