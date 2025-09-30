@@ -52,3 +52,7 @@ body {
 .bg-alt {
     background-color: var(--color-fill-background-alt);
 }
+
+.invert {
+    filter: invert(1);
+}

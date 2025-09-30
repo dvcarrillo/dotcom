@@ -78,7 +78,7 @@ footer {
     height: auto;
 }
 
-footer:not(.bg-alt) .footer-elements .d-logo {
+[data-theme="dark"] .footer-elements .d-logo {
     filter: invert(1);
 }
 
