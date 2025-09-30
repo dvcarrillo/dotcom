@@ -35,17 +35,17 @@
 /* Dark theme */
 [data-theme="dark"] {
     --color-core-primary: #E0E0E0;
-    --color-core-accent: #EC4899;
+    --color-core-accent: #55A8F9;
 
     --color-text-primary: #E0E0E0;
     --color-text-secondary: #9FA3A8;
-    --color-text-primary-alt: #E0E0E0;
+    --color-text-primary-alt: #0F0F0F;
     --color-text-warning: #F8A720;
 
     --color-fill-background: #0F0F0F;
     --color-fill-surface: #2C2C2C;
     --color-fill-surface-warning: #F8A7200d;
-    --color-fill-background-alt: #1F1F1F;
+    --color-fill-background-alt: #E0E0E0;
 
     --color-border-primary-100: #403E3C;
     --color-border-primary-25: #D9D9D940;
@@ -53,14 +53,14 @@
     --color-border-warning-25: #F8A72040;
 
     --color-interaction-fill-surface-hover: #3B3B3B;
-    --color-interaction-btn-primary-hover: #DB2777;
-    --color-interaction-btn-primary-active: #BE185D;
+    --color-interaction-btn-primary-hover: #007BFF;
+    --color-interaction-btn-primary-active: #0050A3;
     --color-interaction-btn-primary-disabled: #B3B3B3;
     --color-interaction-btn-outline-hover: #2125297a;
     --color-interaction-btn-outline-active: #212529e0;
     --color-interaction-btn-outline-disabled: #2125297a;
-    --color-interaction-btn-flat-hover: #f955a71a;
-    --color-interaction-btn-flat-active: #f955a740;
+    --color-interaction-btn-flat-hover: #55a8f91f;
+    --color-interaction-btn-flat-active: #55a8f92e;
     --color-interaction-btn-flat-disabled: transparent;
 }
 
