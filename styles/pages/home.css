@@ -126,10 +126,6 @@
     gap: 20px;
 }
 
-.works-item:hover a {
-    text-decoration: underline;
-}
-
 .works-item .works-item-cover:hover,
 .works-item .works-item-cover:focus {
     background-color: var(--color-interaction-fill-surface-hover);
