@@ -10,7 +10,7 @@
     cursor: cell;
     z-index: 4;
 } */
- 
+
 .hero-section {
     position: fixed;
     top: 0;
@@ -180,23 +180,6 @@
     gap: 8px;
 }
 
-/* CONTACT */
-.contact-title {
-    padding: 42px 0 24px 0;
-}
-
-.contact-title-small {
-    display: none;
-}
-
-.contact-links ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 12px 0 32px 0;
-}
-
 /* SPECIFICS */
 .handle-container {
     width: 100%;
@@ -246,19 +229,6 @@
     /* Adapt works covers */
     .works-item .works-item-cover {
         max-height: 220px;
-    }
-
-    /* Adapt footer title */
-    .contact-title {
-        padding: 24px 0;
-    }
-
-    .contact-title-small {
-        display: block;
-    }
-
-    .contact-title-large {
-        display: none;
     }
 
     /* Adapt section content */

@@ -64,7 +64,8 @@
 
 .navbar.nav-subpage {
     position: fixed;
-    transition: border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: transparent;
+    transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar.nav-subpage.navbar-scrolled {
@@ -74,10 +75,36 @@
 
 /* FOOTER */
 footer {
-    padding: 24px 0 24px 0;
+    padding-bottom: 24px;
 }
 
-.footer-elements {
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.footer-title {
+    padding: 42px 0 24px 0;
+}
+
+.footer-contact-title {
+    padding: 42px 0 24px 0;
+}
+
+.footer-contact-title-small {
+    display: none;
+}
+
+.footer-contact-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0 32px 0;
+}
+
+.footer-bottom {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -87,12 +114,12 @@ footer {
     text-align: right;
 }
 
-.footer-elements .d-logo {
+.footer-bottom .d-logo {
     width: 120px;
     height: auto;
 }
 
-[data-theme="dark"] .footer-elements .d-logo {
+[data-theme="dark"] .footer-bottom .d-logo {
     filter: invert(1);
 }
 
@@ -375,6 +402,7 @@ a.btn {
     color: var(--card-warning-text);
 }
 
+
 /* Adaptations for tactile devices */
 @media (hover: none) {
     .btn:hover {
@@ -409,8 +437,25 @@ a.btn {
         border: 1px solid currentColor;
     }
 
-    /* Asegurar que los iconos son visibles */
     .btn-icon svg {
         forced-color-adjust: none;
+    }
+}
+
+/* RESPONSIVE */
+/* Mobile devices */
+@media (max-width:768px) {
+
+    /* Adapt footer title */
+    .footer-contact-title {
+        padding: 24px 0;
+    }
+
+    .footer-contact-title-small {
+        display: block;
+    }
+
+    .footer-contact-title-large {
+        display: none;
     }
 }

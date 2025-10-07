@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar.nav-subpage');
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 90) {
+        if (window.scrollY > 94) {
             navbar.classList.add('navbar-scrolled');
         } else {
             navbar.classList.remove('navbar-scrolled');
