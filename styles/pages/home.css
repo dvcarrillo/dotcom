@@ -10,6 +10,7 @@
     cursor: cell;
     z-index: 4;
 } */
+ 
 .hero-section {
     position: fixed;
     top: 0;
@@ -48,14 +49,14 @@
     margin-top: 92vh;
     z-index: 2;
     background-color: var(--color-fill-background);
-    transform: translateY(100%);
-    opacity: 0;
-    animation: peekPage 800ms cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    /* transform: translateY(100%); */
+    /* opacity: 0; */
+    /* animation: peekPage 800ms cubic-bezier(0.33, 1, 0.68, 1) forwards;
     will-change: transform;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
-@keyframes peekPage {
+/* @keyframes peekPage {
     0% {
         transform: translateY(100%);
         opacity: 0;
@@ -67,7 +68,7 @@
         transform: translateY(0);
         opacity: 1;
     }
-}
+} */
 
 /* SECTIONS */
 .section {

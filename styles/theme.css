@@ -274,9 +274,9 @@ strong {
 }
 
 .text-secondary {
-    color: var(--color-text-secondary);
+    color: var(--color-text-secondary)!important;
 }
 
 .text-warning {
-    color: var(--color-text-warning);
+    color: var(--color-text-warning)!important;
 }
