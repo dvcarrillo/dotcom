@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Staggering timing
         const baseDelay = 140; // ms before first item
-        const step = 140; // ms between items
+        const step = 80; // ms between items
 
         sequence.forEach((el, idx) => {
             const delay = baseDelay + idx * step;
