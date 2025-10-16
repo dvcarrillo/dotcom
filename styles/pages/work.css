@@ -68,27 +68,34 @@
 }
 
 .next-project-content {
-    padding: 48px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    min-height: 20rem;
+    align-items: start;
 }
 
-.next-project-content .left {
+.next-project-content .left-lg {
+    padding: 48px 0;
     display: flex;
     flex: 1;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     gap: 8px;
+    min-height: 20rem;
+}
+
+.next-project-content .left-sm {
+    padding-top: 48px;
+    display: none;
 }
 
 .next-project-content .right {
+    padding: 48px 0;
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 12px;
+    min-height: 20rem;
 }
 
 /* ANIMATIONS */
@@ -96,7 +103,7 @@
 .reveal {
     opacity: 0;
     transform: translateY(18px);
-    transition: opacity 470ms cubic-bezier(.2,.9,.2,1), transform 470ms cubic-bezier(.2,.9,.2,1);
+    transition: opacity 470ms cubic-bezier(.2, .9, .2, 1), transform 470ms cubic-bezier(.2, .9, .2, 1);
     will-change: opacity, transform;
 }
 
@@ -106,13 +113,13 @@
 }
 
 /* Staggered children inside project-body */
-.project-body.reveal > .section {
+.project-body.reveal>.section {
     opacity: 0;
     transform: translateY(12px);
-    transition: opacity 420ms cubic-bezier(.2,.9,.2,1), transform 420ms cubic-bezier(.2,.9,.2,1);
+    transition: opacity 420ms cubic-bezier(.2, .9, .2, 1), transform 420ms cubic-bezier(.2, .9, .2, 1);
 }
 
-.project-body.reveal > .section.is-visible {
+.project-body.reveal>.section.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -138,12 +145,26 @@
     .project-main-action a {
         width: 100%;
     }
+
+    .next-project-content .left-lg {
+        display: none;
+    }
+
+    .next-project-content .left-sm {
+        display: flex;
+    }
+
+    .next-project-content .right {
+        padding-top: 24px;
+        min-height: 16rem;
+    }
 }
 
 /* Respect user's reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+
     .reveal,
-    .project-body.reveal > .section {
+    .project-body.reveal>.section {
         transition: none !important;
         transform: none !important;
         opacity: 1 !important;
