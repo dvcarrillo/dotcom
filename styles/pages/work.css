@@ -134,6 +134,10 @@
         flex-direction: column;
         padding: 0 0 48px 0;
     }
+
+    .project-main-action a {
+        width: 100%;
+    }
 }
 
 /* Respect user's reduced motion preference */
