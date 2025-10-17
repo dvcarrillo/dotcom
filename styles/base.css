@@ -48,6 +48,12 @@ body {
     border: none !important;
 }
 
+/* Fills */
+.dotted-bg {
+    background: radial-gradient(circle at 2.5px 2.5px, var(--color-fill-dots) 2.5px, var(--color-fill-background) 0);
+    background-size: 26px 26px;
+}
+
 /* Color modifiers */
 .bg-alt {
     background-color: var(--color-fill-background-alt);

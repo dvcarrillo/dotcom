@@ -3,14 +3,6 @@
     z-index: 1;
 }
 
-/* PAINT INTERACTIONS */
-canvas {
-    position: fixed;
-    top: 0px;
-    cursor: cell;
-    z-index: 1;
-}
-
 /* HERO SECTION */
 .hero-section {
     position: fixed;

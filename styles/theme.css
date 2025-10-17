@@ -14,6 +14,7 @@
     --color-fill-surface: #F0F1F2;
     --color-fill-surface-warning: #e08f000d;
     --color-fill-background-alt: #181818;
+    --color-fill-dots: #EEEEEE;
 
     --color-border-primary-100: #181818;
     --color-border-primary-25: #18181840;
@@ -46,6 +47,7 @@
     --color-fill-surface: #2C2C2C;
     --color-fill-surface-warning: #F8A7200d;
     --color-fill-background-alt: #E0E0E0;
+    --color-fill-dots: #1f1f1f;
 
     --color-border-primary-100: #403E3C;
     --color-border-primary-25: #D9D9D940;
