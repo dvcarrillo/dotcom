@@ -127,7 +127,6 @@
 .section {
     position: relative;
     border-top: 2px solid var(--color-border-primary-100);
-    padding-bottom: 56px;
 }
 
 .section-title {
@@ -149,6 +148,7 @@
     position: relative;
     padding-top: 42px;
     padding-left: 32%;
+    padding-bottom: 56px;
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -252,6 +252,7 @@
     align-items: center;
     gap: 16px;
     margin-top: 42px;
+    padding-bottom: 56px;
 }
 
 /* RESPONSIVE */
