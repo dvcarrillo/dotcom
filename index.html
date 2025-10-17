@@ -57,7 +57,7 @@
   <script defer src="/_vercel/insights/script.js"></script>
   <!-- Paint interactions -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
-  <!-- <script src="/scripts/paint.js"></script> -->
+  <script src="/scripts/paint.js"></script>
   <script src="/scripts/components.js"></script>
   <script src="/scripts/main.js"></script>
   <script src="/scripts/home.js"></script>
@@ -68,20 +68,16 @@
     <div class="navbar-container">
       <div class="navbar-start text-secondary">
         Portfolio preview
-        <a target="_blank" rel="noopener noreferrer" class="link" href="/sandbox/">
-          Sandbox
-          <img src="/assets/icons/new_tab.svg" alt="Open in new tab" draggable="false">
-        </a>
       </div>
       <div class="navbar-end">
         <a href="mailto:dv.carrillo@yahoo.com?subject=Hey, David" class="btn btn-primary">get in touch</a>
       </div>
     </div>
   </nav>
-  <div class="hero-section">
+  <div class="hero-section" id="page-canvas">
     <div class="container-small">
       <div class="hero-title">
-        <h5 class="title">Hello, my name is</h5>
+        <h1 class="h5 title">Hello, my name is</h1>
         <svg class="signature" width="473" height="254" viewBox="0 0 473 254" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             class="signature-path path-1"
@@ -104,9 +100,8 @@
             d="M357.589 48.1014C357.589 44.9352 355.525 45.6541 352.695 45.6541C352.017 45.6541 344.382 44.9334 347.256 47.6482C349.415 49.6871 354.753 49.4903 356.773 47.2857C358.154 45.7795 357.259 43.8253 355.595 42.935C351.939 40.9782 347.931 43.8055 344.537 44.8384"
             stroke="#181818" stroke-width="10.5808" stroke-linecap="round" />
         </svg>
-
-        <h5 class="title">I thrive at the intersection of product design and development, crafting experiences that
-          truly put users first.</h5>
+        <h2 class="h5 title">I thrive at the intersection of product design and development, crafting experiences that
+          truly put users first.</h2>
       </div>
       <div class="hero-description">
         <ul>
@@ -124,6 +119,7 @@
       </div>
     </div>
   </div>
+
   <div class="page">
     <!-- Introduction section -->
     <div class="section">
