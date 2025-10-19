@@ -230,7 +230,7 @@
 .works-item-badge-container {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 /* SPECIFICS */
