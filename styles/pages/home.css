@@ -3,6 +3,7 @@
     z-index: 1;
 }
 
+/* HERO SECTION */
 .dot-container {
     position: fixed;
     top: 0;
@@ -30,7 +31,6 @@
     opacity: 0.06;
 }
 
-/* HERO SECTION */
 .hero-section {
     position: fixed;
     top: 0;
