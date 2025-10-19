@@ -53,8 +53,8 @@
     width: 85%;
     height: auto;
     margin: -18px 0 -16px -5px;
-    animation: fadeIn 800ms ease forwards;
-    animation-delay: 1s;
+    animation: fadeIn 600ms ease forwards;
+    animation-delay: 0.8s;
     opacity: 0;
 }
 
@@ -76,31 +76,31 @@
 .path-1 {
     stroke-dasharray: 74.31173706054688;
     stroke-dashoffset: 74.31173706054688;
-    animation-delay: 1s;
+    animation-delay: 0.8s;
 }
 
 .path-2 {
     stroke-dasharray: 493.84356689453125;
     stroke-dashoffset: 493.84356689453125;
-    animation-delay: 1.4s;
+    animation-delay: 1.2s;
 }
 
 .path-3 {
     stroke-dasharray: 420.83819580078125;
     stroke-dashoffset: 420.83819580078125;
-    animation-delay: 1.7s;
+    animation-delay: 1.5s;
 }
 
 .path-4 {
     stroke-dasharray: 381.2994384765625;
     stroke-dashoffset: 381.2994384765625;
-    animation-delay: 2.2s;
+    animation-delay: 2s;
 }
 
 .path-5 {
     stroke-dasharray: 41.45681381225586;
     stroke-dashoffset: 41.45681381225586;
-    animation-delay: 2.8s;
+    animation-delay: 2.6s;
 }
 
 @keyframes fadeIn {
