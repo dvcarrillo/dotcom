@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox</title>
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <link rel="stylesheet" href="/styles/components.css">
+  <!-- Scripts -->
+  <script src="/scripts/components.js"></script>
+  <script src="/scripts/main.js"></script>
+  <!-- Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    feather.replace();
+  });
+</script>
+
+<style>
+  body {
+    padding: 1rem;
+    margin-bottom: 5rem;
+    background-color: var(--color-fill-background);
+  }
+
+  .title {
+    width: 100%;
+    padding: 12px 16px;
+    color: var(--color-text-secondary);
+    background-color: var(--color-fill-surface);
+  }
+
+  .component-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+
+  .row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 16px;
+    width: 100%;
+  }
+</style>
+
+<body>
+  <h1>Sandbox</h1>
+  <div class="component-preview">
+    <h4 class="title">Navbars</h4>
+    <div class="row">
+      <!-- Standard navbar -->
+      <nav style="position: relative;" class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-start text-secondary">
+          </div>
+          <div class="navbar-end">
+            <a href="mailto:dv.carrillo@yahoo.com?subject=Hey, David&amp" class="btn btn-primary">get in touch</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <!-- Subpage navbar -->
+      <nav style="position: relative;" class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-start">
+            <a class="link large" href="/#selected-works">
+              <i data-feather="arrow-left" width="20" height="20"></i>
+              Selected works
+            </a>
+          </div>
+          <div class="navbar-end">
+            <a href="mailto:dv.carrillo@yahoo.com?subject=Hey, David&amp" class="btn btn-primary">get in touch</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h4 class="title">Footer</h4>
+    <div class="row">
+      <!-- Standard footer -->
+      <footer class="bg-alt">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-top">
+              <div class="footer-title">
+                <h1 class="text-primary-alt footer-contact-title-large">Let's stay in touch</h1>
+                <h1 class="h2 text-primary-alt footer-contact-title-small">Let's stay in touch</h1>
+              </div>
+              <div class="footer-contact-links">
+                <ul>
+                  <li><a href="mailto:dv.carrillo@yahoo.com?subject=Hey, David"
+                      class="link large text-primary-alt">Contact
+                      me</a></li>
+                  </li>
+                  <li><a href="https://www.linkedin.com/in/dvcarrillo" class="link large text-primary-alt"
+                      target="_blank">Linkedin
+                      <img src="/assets/icons/new_tab_alt.svg" alt="Open in new tab" draggable="false"></a></li>
+                  <li><a href="https://bsky.app/profile/dvcarrillo.bsky.social" class="link large text-primary-alt"
+                      target="_blank">Bluesky
+                      <img src="/assets/icons/new_tab_alt.svg" alt="Open in new tab" draggable="false"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <img class="d-logo" src="/assets/logo.svg" alt="Website logo" draggable="false">
+              <small class="text-primary-alt">© 2025 David Vargas Carrillo — designed & developed by me.<br>
+                <a href="https://github.com/dvcarrillo/dotcom" class="link underline text-primary-alt"
+                  target="_blank">Source code</a>
+              </small>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <h4 class="title">Buttons</h4>
+    <div class="row">
+      <!-- Primary button -->
+      <button class="btn btn-primary">primary</button>
+      <!-- Outline button -->
+      <button class="btn btn-outline">outline</button>
+      <!-- Flat button -->
+      <button class="btn btn-flat">flat</button>
+      <!-- Primary button disabled -->
+      <button class="btn btn-primary" disabled>primary</button>
+      <!-- Outline button disabled -->
+      <button class="btn btn-outline" disabled>outline</button>
+      <!-- Flat button disabled -->
+      <button class="btn btn-flat" disabled>flat</button>
+      <!-- Primary button LG -->
+      <button class="btn btn-lg btn-primary">primary</button>
+      <!-- Outline button LG  -->
+      <button class="btn btn-lg btn-outline">outline</button>
+      <!-- Flat button LG -->
+      <button class="btn btn-lg btn-flat">flat</button>
+      <!-- Icon button (primary) -->
+      <button class="btn btn-primary btn-icon">
+        <i data-feather="x"></i>
+      </button>
+      <!-- Icon button (flat) -->
+      <button class="btn btn-flat btn-icon">
+        <i data-feather="plus"></i>
+      </button>
+    </div>
+    <h4 class="title">Buttons (as links)</h4>
+    <div class="row">
+      <!-- Primary button -->
+      <a class="btn btn-primary">primary</a>
+      <!-- Outline button -->
+      <a class="btn btn-outline">outline</a>
+      <!-- Flat button -->
+      <a class="btn btn-flat">flat</a>
+      <!-- Primary button disabled -->
+      <a class="btn btn-primary disabled">primary</a>
+      <!-- Outline button disabled -->
+      <a class="btn btn-outline disabled">outline</a>
+      <!-- Flat button disabled -->
+      <a class="btn btn-flat disabled">flat</a>
+      <!-- Primary button LG -->
+      <a class="btn btn-lg btn-primary">primary</a>
+      <!-- Outline button LG  -->
+      <a class="btn btn-lg btn-outline">outline</a>
+      <!-- Flat button LG -->
+      <a class="btn btn-lg btn-flat">flat</a>
+      <!-- Icon button (primary) -->
+      <a class="btn btn-primary btn-icon">
+        <i data-feather="x"></i>
+      </a>
+      <!-- Icon button (flat) -->
+      <a class="btn btn-flat btn-icon">
+        <i data-feather="plus"></i>
+      </a>
+    </div>
+    <h4 class="title">Badges</h4>
+    <div class="row">
+      <span class="badge">badge</span>
+    </div>
+    <h4 class="title">Links</h4>
+    <div class="row">
+      <!-- Link -->
+      <a href="#">link</a>
+      <!-- Link LG -->
+      <a href="#" class="large">link lg</a>
+      <!-- Link (new tab) -->
+      <a href="#" class="link" target="_blank">link in new tab
+        <img src="/assets/icons/new_tab.svg" alt="Open in new tab" draggable="false">
+      </a>
+      <!-- Link (secondary) -->
+      <a class="text-secondary" href="#">secondary link</a>
+      <!-- Link underline -->
+      <a class="underline" href="#">link</a>
+      <!-- Link (new tab) underline -->
+      <a href="#" class="link underline" target="_blank">link in new tab
+        <img src="/assets/icons/new_tab.svg" alt="Open in new tab" draggable="false">
+      </a>
+      <!-- Link (secondary) underline -->
+      <a class="text-secondary underline" href="#">secondary link</a>
+    </div>
+    <h4 class="title">Cards</h4>
+    <div class="column">
+
+      <div class="card">
+        <div class="card-top">
+          <div class="card-action">
+            <button class="btn btn-flat btn-icon toggle-content">
+              <i data-feather="plus"></i>
+            </button>
+          </div>
+          <div class="card-header">
+            <div class="card-header-left">
+              <p class="card-title text-medium">Product designer</p>
+              <p class="text-secondary">Societe Generale</p>
+            </div>
+            <div class="card-header-right">
+              <p class="text-secondary">Present</p>
+              <p class="text-secondary">Paris</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p class="text-secondary hidden">Societe Generale is one of the leading European financial services groups. I
+            am part
+            of the Product Design team at Societe Generale Corporate & Investment Banking (SGCIB).</p>
+        </div>
+      </div>
+
+      <div class="card card-warning">
+        <div class="card-top">
+          <div class="card-icon">
+            <i data-feather="tool" width="21" height="21"></i>
+          </div>
+          <div class="card-header">
+            <div class="card-header-left">
+              <p class="card-title text-medium">This section is under construction</p>
+              <p class="text-secondary">I'm currently updating this section with my latest projects. This includes
+                creating a dedicated portfolio page to showcase these projects and their details. In the meantime, if
+                you're interested in learning more about my recent work, feel free to reach out to me directly!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <h4 class="title">Typography</h4>
+    <div class="column">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p>Paragraph</p>
+      <span>Free text</span>
+      <p class="text-secondary">Secondary paragraph</p>
+      <small>Small text</small>
+      <p class="xsmall">Xsmall text</p>
+    </div>
+</body>
+
+</html>

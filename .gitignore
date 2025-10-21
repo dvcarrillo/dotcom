@@ -131,3 +131,8 @@ dist
 
 # macOS specific
 .DS_Store
+.vercel
+.env*.local
+
+# Page models
+works/project.html

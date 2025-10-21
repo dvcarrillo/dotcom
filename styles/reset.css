@@ -2,9 +2,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-* {
     margin: 0;
     padding: 0;
 }
@@ -31,12 +28,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
+h6,
 ul {
+    margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
 }
 
 #root,
