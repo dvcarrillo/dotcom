@@ -21,14 +21,14 @@
     position: absolute;
     inset: 0;
     background-image: url("/assets/noise.png");
-    opacity: 0.04;
+    opacity: 0.05;
     mix-blend-mode: multiply;
     pointer-events: none;
 }
 
 [data-theme='dark'] .hero-section::after {
     mix-blend-mode: screen;
-    opacity: 0.06;
+    opacity: 0.05;
 }
 
 .hero-section {
