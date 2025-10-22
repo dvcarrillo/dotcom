@@ -4,23 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox</title>
+  <!-- Title & description -->
+  <title>Sandbox | David Vargas – Product Designer</title>
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="content-language" content="en">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sandbox | David Vargas – Product Designer">
+  <meta property="og:description" content="David Vargas's portfolio sandbox.">
+  <meta property="og:image" content="https://www.dvcarrillo.com/assets/social_thumbnail.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <!-- Favicon & browser icons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="David Vargas" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- Styles -->
   <link rel="stylesheet" href="/styles/reset.css">
   <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/theme.css">
   <link rel="stylesheet" href="/styles/components.css">
+  <link rel="stylesheet" href="/styles/pages/404.css">
+  <!-- Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <!-- Track -->
+  <script defer src="/_vercel/insights/script.js"></script>
   <!-- Scripts -->
   <script src="/scripts/components.js"></script>
   <script src="/scripts/main.js"></script>
-  <!-- Icons -->
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    feather.replace();
-  });
-</script>
 
 <style>
   body {
@@ -31,7 +45,7 @@
 
   .title {
     width: 100%;
-    padding: 12px 16px;
+    padding: 16px 8px;
     color: var(--color-text-secondary);
     background-color: var(--color-fill-surface);
   }
@@ -48,8 +62,8 @@
     display: flex;
     gap: 1rem;
     align-items: center;
-    padding: 0 16px;
     width: 100%;
+    overflow-x: auto;
   }
 
   .column {
@@ -101,15 +115,14 @@
           <div class="footer-content">
             <div class="footer-top">
               <div class="footer-title">
-                <h1 class="text-primary-alt footer-contact-title-large">Let's stay in touch</h1>
-                <h1 class="h2 text-primary-alt footer-contact-title-small">Let's stay in touch</h1>
+                <h2 class="h1 text-primary-alt footer-contact-title-large">Let's stay in touch</h2>
+                <h2 class="text-primary-alt footer-contact-title-small">Let's stay in touch</h2>
               </div>
               <div class="footer-contact-links">
                 <ul>
                   <li><a href="mailto:dv.carrillo@yahoo.com?subject=Hey, David"
                       class="link large text-primary-alt">Contact
                       me</a></li>
-                  </li>
                   <li><a href="https://www.linkedin.com/in/dvcarrillo" class="link large text-primary-alt"
                       target="_blank">Linkedin
                       <img src="/assets/icons/new_tab_alt.svg" alt="Open in new tab" draggable="false"></a></li>
