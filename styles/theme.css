@@ -92,9 +92,9 @@
 }
 
 @font-face {
-    font-family: PPFraktionMono;
-    src: url(typefaces/PPFraktionMono-Regular.woff2) format("woff2");
-    font-weight: 390;
+    font-family: PPNeueMontreal;
+    src: url(typefaces/PPNeueMontreal-Bold.woff2) format("woff2");
+    font-weight: 800;
     font-style: normal;
     font-display: fallback;
 }
@@ -261,8 +261,11 @@ em {
     font-style: italic !important;
 }
 
-.text-medium,
-strong {
+b, strong {
+    font-weight: 800 !important;
+}
+
+.text-medium {
     font-weight: 530 !important;
 }
 
