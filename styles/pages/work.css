@@ -1,9 +1,9 @@
 .project-content {
     margin-top: 160px;
-    margin-bottom: 160px;
+    margin-bottom: 96px;
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 56px;
 }
 
 /* PROJECT HEADING */
@@ -50,16 +50,24 @@
 }
 
 /* PROJECT BODY */
+ul, ol {
+    list-style-position: inside;
+}
+
 .project-body {
     display: flex;
     flex-direction: column;
     gap: 56px;
 }
 
-.project-body .section {
+.section {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
+}
+
+.subsection {
+    margin-top: 8px;
 }
 
 /* NEXT PROJECT SECTION */

@@ -115,6 +115,13 @@ footer {
     text-align: right;
 }
 
+.footer-bottom-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-end;
+}
+
 .footer-bottom .d-logo {
     width: 120px;
     height: auto;
@@ -296,7 +303,6 @@ a.btn {
 .link img.lg {
     width: 24px;
     height: 24px;
-    margin-left: 2px;
 }
 
 .link:focus-visible {

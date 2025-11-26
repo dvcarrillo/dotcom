@@ -245,6 +245,20 @@
     gap: 12px;
 }
 
+.works-item-title-container .h5.link {
+    display: inline;
+    white-space: normal;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
+}
+
+.works-item-title-container .h5.link img {
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+}
+
 .works-item-badge-container {
     display: flex;
     align-items: center;
