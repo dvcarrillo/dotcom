@@ -50,7 +50,18 @@
 }
 
 /* PROJECT BODY */
-ul, ol {
+figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 450;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: var(--color-text-secondary);
+}
+
+ul,
+ol {
     list-style-position: inside;
 }
 

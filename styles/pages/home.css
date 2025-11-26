@@ -242,7 +242,7 @@
 .works-item-title-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
 }
 
 .works-item-title-container .h5.link {
@@ -255,7 +255,7 @@
 
 .works-item-title-container .h5.link img {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     height: auto;
 }
 
