@@ -87,8 +87,12 @@ ol {
     gap: 12px;
 }
 
+.section h2 {
+    margin-bottom: 8px;
+}
+
 .subsection {
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 /* NEXT PROJECT SECTION */
