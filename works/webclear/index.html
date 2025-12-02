@@ -108,64 +108,111 @@
                 </div>
             </div>
             <div class="project-body reveal">
+                <div class="card card-warning">
+                    <div class="card-top">
+                        <div class="card-icon">
+                            <i data-feather="shield" width="21" height="21"></i>
+                        </div>
+                        <div class="card-header">
+                            <div class="card-header-left">
+                                <p class="card-title text-medium">This case study shows limited information</p>
+                                <p class="text-secondary">
+                                    Some details of this work are intentionally limited due to confidentiality
+                                    constraints. If you’d like to dive deeper into my work, feel free to reach out.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="section">
                     <h2 class="h3">Challenge</h2>
                     <p>
                         WebClear is a long-standing service within Societe Generale’s Global Transaction Banking suite.
                         In 2023, it began a strategic migration to SG Markets, the bank’s modern platform for corporate
-                        and institutional clients. The objective was to modernize the experience, align it with SG
-                        Markets’ standards, and support future scalability.<br><br>
+                        and institutional clients. The objective of the migration was to modernize the experience, align
+                        it with SG Markets standards, and support future scalability.
+                    </p>
+                    <p>
                         My mandate:
                     </p>
                     <ul>
-                        <li><b>Lead the UX vision</b> and workflow redesign.</li>
-                        <li><b>Introduce and scale a user-centered design approach</b> across the product team.</li>
-                        <li><b>Support technical teams in creating a responsive experience</b> suitable for the
+                        <li>Lead the UX vision and workflow redesign.</li>
+                        <li>Introduce and scale a user-centered design approach across the product team.</li>
+                        <li>Support technical teams in creating a responsive experience suitable for the
                             platform’s diverse usage contexts.</li>
                     </ul>
                 </div>
 
                 <div class="section">
                     <h2 class="h3">Approach and design process</h2>
+                    <p>
+                        The project progressed in cycles, defined and planned together with the product team and
+                        considering business priorities, UX needs and the global roadmap. Each cycle focused on a
+                        portion of the service, moving from discovery to validation.
+                    </p>
+                    <p>
+                        Since we were working within the context of a platform migration, I prioritized reworking
+                        the core components and navigation first, and then implemented a strategy to maintain the legacy
+                        code within the new experience, while the rest of the parts were being built.
+                    </p>
                     <div class="section subsection">
-                        <h3 class="h5">1. Framing & discovery</h3>
+                        <h3 class="h6">1. Framing & discovery</h3>
                         <p>
-                            Working closely with product stakeholders, I formalized the problem space, user profiles,
-                            and service expectations. We reviewed the existing experience to understand current user
-                            paths and documented the functional elements required for the new environment. This allowed
-                            me to redesign the experience around clear, streamlined user journeys suitable for SG
-                            Markets.
+                            Working closely with the product team and expert users, I formalized the problem space,
+                            user personas, and data requirements. We mapped the existing user experience end to end to
+                            understand current journeys, and documented functional elements, data structures, and API
+                            dependencies. This provided a solid foundation for the redesign and gave us a shared view of
+                            constraints, pain points, and opportunities. Some key opportunities emerged:
                         </p>
+                        <ul>
+                            <li>Simplification of the platform’s navigation by reorganizing it around user goals rather
+                                than technical data models.</li>
+                            <li>Reduction of task completion time by leveraging modern components and interaction
+                                patterns from our design system.</li>
+                            <li>Usage of flexible, responsive layouts that take advantage of modern browsers, enabling
+                                richer information displays and better adaptation to different screen sizes.</li>
+                        </ul>
                     </div>
                     <div class="section subsection">
-                        <h3 class="h5">2. Wireframing & navigation model</h3>
+                        <h3 class="h6">2. Wireframing & navigation model</h3>
                         <p>
-                            Based on the newly defined flows, I created wireframes covering both individual screens and
-                            the platform-level navigation structure. These were iterated weekly with product owners,
-                            developers, and expert users. A key part of this phase was designing content-first, reusable
-                            page layouts and their responsive behavior, as the new platform needed to support a broader
-                            range of screen sizes than before.
+                            We began each phase by refining user flows based on the identified opportunities and updated
+                            data requirements, ensuring alignment with both BU and SG Markets standards. Together with
+                            the product team, we iterated on these flows through a series of workshops until navigation,
+                            actions, and displayed data were fully defined and understood.
+                        </p>
+                        <p>
+                            Using these validated flows, I created wireframes that covered individual screens as well as
+                            the overall navigation structure. We reviewed and refined these wireframes weekly with
+                            product owners, developers, and expert users. A key focus during this stage was designing
+                            content-first, reusable layouts and test responsive behavior to anticipate technical
+                            constraints early in the process.
                         </p>
                     </div>
                     <figure class="image-with-caption">
                         <img src="/assets/images/works/sgm_webclear/grid.png"
                             alt="A diagram showing the different grid systems used in our design">
-                        <figcaption>I used different responsive base layouts across the platform to fit the content
-                            needs</figcaption>
+                        <figcaption>
+                            Using different base layouts was key to address the diversity of information displayed in
+                            the service
+                        </figcaption>
                     </figure>
                     <div class="section subsection">
-                        <h3 class="h5">3. Prototyping & testing</h3>
+                        <h3 class="h6">3. Prototyping & testing</h3>
                         <p>
-                            Once the structure was validated, I built interactive prototypes in Figma aligned with SG
-                            Markets’ design system.<br>
-                            To ensure continuity and scalability:
+                            Once the structure was validated, I created interactive prototypes in Figma aligned with the
+                            SG Markets design system. To ensure continuity and scalability across the platform:
                         </p>
                         <ul>
-                            <li>I created reusable templates for recurring information patterns.</li>
-                            <li>I defined breakpoint behavior early, in collaboration with engineering.</li>
-                            <li>We ran usability tests with representative users, refining the experience before
-                                development.</li>
+                            <li>I built reusable design components for shared platform elements.</li>
+                            <li>I created templates for recurring information patterns.</li>
+                            <li>I established breakpoints and designed key screens across multiple sizes.</li>
                         </ul>
+                        <p>
+                            We then tested the prototypes with representative users, refining interactions and layouts
+                            before handoff. The consistency achieved early through shared components and templates
+                            significantly accelerated subsequent delivery cycles.
+                        </p>
                     </div>
                     <figure>
                         <img src="/assets/images/works/sgm_webclear/responsiveness_1.png"
@@ -177,44 +224,41 @@
                             alt="Two screen diagrams showing the responsive behavior of a page containing forms and actions">
                         <figcaption>Example of responsive behavior on pages containing forms and actions</figcaption>
                     </figure>
-                    <div class="section subsection">
-                        <h3 class="h5">4. Iterative delivery</h3>
-                        <p>
-                            The project progressed in cycles. Each cycle focused on a portion of the service, moving
-                            from discovery to validation.<br>
-                            The consistency established early through templates and shared components significantly
-                            accelerated later delivery cycles.
-                        </p>
-                    </div>
                 </div>
 
                 <div class="section">
                     <h2 class="h3">Collaboration</h2>
                     <div class="section subsection">
-                        <h3 class="h5">With the product team</h3>
+                        <h3 class="h6">With the product team</h3>
                         <p>
-                            We established shared rituals to integrate UX seamlessly into the product lifecycle
-                        </p>
-                        <ul>
-                            <li>Presenting the UX methodology and expected deliverables.</li>
-                            <li>Mapping responsibilities across the design cycle.</li>
-                            <li>Visualizing the full plan using shared roadmaps.</li>
-                        </ul>
-                        <p>
-                            Over time, we refined our collaboration rhythm to ensure smooth alignment throughout weekly
-                            working sessions.
+                            We established shared rituals to integrate UX seamlessly into the product lifecycle. This
+                            included presenting our UX methodology and expected deliverables, mapping responsibilities
+                            across each phase of the design cycle, and visualizing the UX plan in shared documents
+                            aligned with the global roadmap. Over time, we refined this collaboration rhythm, ensuring
+                            smooth alignment and efficient decision-making during our weekly working sessions.
                         </p>
                     </div>
 
                     <div class="section subsection">
-                        <h3 class="h5">With the development team</h3>
+                        <h3 class="h6">With the development team</h3>
                         <p>
-                            Developers were involved from the earliest design stages. This helped highlight feasibility
-                            considerations, edge cases, and responsive constraints early on.<br>
-                            I enriched handoff materials with detailed interaction states and logic to support accurate
-                            implementation.<br>
-                            Throughout development, we conducted regular design reviews in testing environments to
-                            ensure fidelity between design and final product.
+                            My priority was to involve developers from the earliest stages of the design process,
+                            especially given the migration context and the technical challenges introduced by responsive
+                            layouts. By testing solutions both in Figma and in development environments, we were able to
+                            refine breakpoints and layout behaviors early, ensuring a seamless experience across
+                            devices.
+                        </p>
+                        <p>
+                            Developers’ input helped us identify edge cases sooner and validate user flows with
+                            technical
+                            feasibility in mind. As a result, we enriched our handoff materials with detailed
+                            interaction states, accessibility considerations, and logic specifications to support
+                            accurate implementation.
+                        </p>
+                        <p>
+                            Throughout development, we held weekly follow-up sessions to review component and layout
+                            progress, and conducted design reviews directly in test environments to ensure the final
+                            product remained faithful to the intended design.
                         </p>
                     </div>
                 </div>
@@ -222,23 +266,23 @@
                 <div class="section">
                     <h2 class="h3">Outcomes and impact</h2>
                     <p>
-                        The redesigned experience brought several benefits:
+                        The redesigned experience delivered several key benefits:
                     </p>
                     <ul>
-                        <li><b>A simplified navigation structure</b>, making key actions more direct and intuitive.</li>
-                        <li><b>More consistent layouts</b> that improve scanability and support different types of
-                            tasks.</li>
-                        <li><b>A responsive interface</b> validated across multiple screen sizes used by clients.</li>
-                        <li><b>A set of UX metrics</b> to evaluate user adoption and overall experience quality.</li>
-                        <li><b>Clearer feedback and guidance throughout user actions</b>, reinforcing confidence and
-                            clarity.
+                        <li>A simplified navigation structure, making key user paths up to three times faster.</li>
+                        <li>Reduced task completion time through modern components and useful shortcuts.</li>
+                        <li>Consistent layouts that improve scanability and support different types of tasks.</li>
+                        <li>A responsive interface validated across the range of client screen sizes and usage
+                            conditions.</li>
+                        <li>Defined UX metrics to measure user adoption and overall experience quality.</li>
+                        <li>Clearer feedback and guidance throughout user actions, reinforcing confidence and clarity.
                         </li>
-                        </li>
-                        <li><b>Strong alignment with SG Markets’ design system</b>, ensuring cohesion across the broader
+                        <li>Strong alignment with the SG Markets design system, ensuring cohesion across the broader
                             ecosystem.</li>
                     </ul>
-                    <p>This project established a scalable UX foundation for WebClear within SG Markets and strengthened
-                        collaborative practices between product, design, and engineering teams.
+                    <p>
+                        This project established a scalable UX foundation for WebClear within SG Markets and
+                        strengthened collaboration between product, design, and engineering teams.
                     </p>
                 </div>
 
@@ -299,7 +343,7 @@
                     <img class="d-logo" src="/assets/logo.svg" alt="Website logo" draggable="false">
                     <div class="footer-bottom-text">
                         <small class="text-primary-alt">© 2025 David Vargas Carrillo — designed & developed by
-                            me.</small>
+                            me</small>
                         <small class="text-primary-alt">
                             <a href="https://github.com/dvcarrillo/dotcom" class="link underline text-primary-alt"
                                 target="_blank">Source code</a> |

@@ -10,13 +10,13 @@
 .project-heading {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 
 .project-title {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 .project-properties {
@@ -50,6 +50,10 @@
 }
 
 /* PROJECT BODY */
+figure {
+    margin: 8px 0;
+}
+
 figcaption {
     text-align: center;
     margin-top: 8px;
@@ -60,25 +64,31 @@ figcaption {
     color: var(--color-text-secondary);
 }
 
-ul,
+.project-body {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.project-body ul,
 ol {
     list-style-position: inside;
 }
 
-.project-body {
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
+.project-body ul li::marker,
+.project-body ol li::marker {
+    color: var(--color-text-secondary);
+    opacity: 0.95;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
 .subsection {
-    margin-top: 8px;
+    margin-top: 12px;
 }
 
 /* NEXT PROJECT SECTION */
