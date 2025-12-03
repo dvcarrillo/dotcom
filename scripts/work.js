@@ -21,9 +21,10 @@
             const properties = document.querySelector('.project-properties.reveal');
             const mainImage = document.querySelector('.project-main-image.reveal');
             const mainAction = document.querySelector('.project-main-action.reveal');
+            const notice = document.querySelector('.project-notice.reveal');
             const body = document.querySelector('.project-body.reveal');
 
-            const sequence = [title, properties, mainImage, mainAction, body].filter(Boolean);
+            const sequence = [title, properties, mainImage, mainAction, notice, body].filter(Boolean);
             const addVisible = el => el?.classList.add('is-visible');
 
             if (prefersReduced) {
