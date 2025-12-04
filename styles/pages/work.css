@@ -50,20 +50,6 @@
 }
 
 /* PROJECT BODY */
-figure {
-    margin: 8px 0;
-}
-
-figcaption {
-    text-align: center;
-    margin-top: 8px;
-    font-weight: 450;
-    font-size: 13px;
-    line-height: 16px;
-    letter-spacing: 0em;
-    color: var(--color-text-secondary);
-}
-
 .project-body {
     display: flex;
     flex-direction: column;
@@ -88,11 +74,65 @@ ol {
 }
 
 .section h2 {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 }
 
 .subsection {
     margin-top: 8px;
+}
+
+/* FIGURE ARRANGEMENTS */
+figure {
+    margin: 24px 0;
+}
+
+figure img {
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 450;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: var(--color-text-secondary);
+}
+
+.figure-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: stretch;
+    margin: 24px 0;
+}
+
+.figure-grid-2_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 16px;
+    align-items: stretch;
+    margin: 24px 0;
+}
+
+.figure-grid-2_1-2 figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.figure-grid-2_1-2 figure img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* NEXT PROJECT SECTION */
@@ -190,6 +230,25 @@ ol {
     .next-project-content .right {
         padding-top: 24px;
         min-height: 16rem;
+    }
+
+    .figure-grid-3 {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .figure-grid-2_1-2 {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .figure-grid-2_1-2 figure {
+        height: auto;
+    }
+
+    .figure-grid-2_1-2 figure img {
+        height: auto;
+        object-fit: contain;
     }
 }
 
