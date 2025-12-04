@@ -83,7 +83,7 @@ ol {
 
 /* FIGURE ARRANGEMENTS */
 figure {
-    margin: 8px 0;
+    margin: 24px 0;
 }
 
 figure img {
@@ -108,7 +108,7 @@ figcaption {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     align-items: stretch;
-    margin: 8px 0;
+    margin: 24px 0;
 }
 
 .figure-grid-2_1-2 {
@@ -116,7 +116,7 @@ figcaption {
     grid-template-columns: 1fr 2fr;
     gap: 16px;
     align-items: stretch;
-    margin: 8px 0;
+    margin: 24px 0;
 }
 
 .figure-grid-2_1-2 figure {
