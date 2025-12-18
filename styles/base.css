@@ -48,6 +48,27 @@ body {
     border: none !important;
 }
 
+/* Border radiuses */
+.rounded-sm {
+    border-radius: 8px;
+}
+
+.rounded {
+    border-radius: 12px;
+}
+
+.rounded-lg {
+    border-radius: 16px;
+}
+
+.rounded-xl {
+    border-radius: 24px;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
 /* Color modifiers */
 .bg-alt {
     background-color: var(--color-fill-background-alt);

@@ -16,7 +16,15 @@
 .project-title {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+}
+
+.project-title-small {
+    display: none;
+}
+
+.project-description-small {
+    display: none;
 }
 
 .project-properties {
@@ -200,6 +208,22 @@ figcaption {
 /* RESPONSIVE */
 /* Mobile devices */
 @media (max-width:768px) {
+    .project-title-large {
+        display: none;
+    }
+
+    .project-title-small {
+        display: block;
+    }
+
+    .project-description-large {
+        display: none;
+    }
+
+    .project-description-small {
+        display: block;
+    }
+
     .project-content {
         margin-bottom: 112px;
     }
