@@ -77,3 +77,94 @@ body {
 .invert {
     filter: invert(1);
 }
+
+/* Shadows */
+.raised {
+    box-shadow: 0 4px 28px rgba(10, 10, 10, 0.15), 0 2px 4px rgba(0, 0, 0, 0.05)
+}
+
+/* Layout */
+.mt4 {
+    margin-top: 4px;
+}
+
+.mb4 {
+    margin-bottom: 4px;
+}
+
+.my4 {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.my8 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.my16 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.my24 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.gap0 {
+    gap: 0px;
+}
+
+.gap4 {
+    gap: 4px;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.gap16 {
+    gap: 16px;
+}
+
+.gap24 {
+    gap: 24px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}

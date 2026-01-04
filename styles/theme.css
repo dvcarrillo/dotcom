@@ -11,6 +11,7 @@
     --color-text-warning: #E08F00;
 
     --color-fill-background: #FAFAFA;
+    --color-fill-background-invert: #FFFFFF;
     --color-fill-surface: #F0F1F2;
     --color-fill-surface-warning: #e08f000d;
     --color-fill-background-alt: #181818;
@@ -44,6 +45,7 @@
     --color-text-warning: #F8A720;
 
     --color-fill-background: #0F0F0F;
+    --color-fill-background-invert: #181818;
     --color-fill-surface: #2C2C2C;
     --color-fill-surface-warning: #F8A7200d;
     --color-fill-background-alt: #E0E0E0;
@@ -263,6 +265,10 @@ em {
 
 b, strong {
     font-weight: 800 !important;
+}
+
+.text-regular {
+    font-weight: 450 !important;
 }
 
 .text-medium {

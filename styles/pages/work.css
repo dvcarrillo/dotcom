@@ -3,7 +3,10 @@
     margin-bottom: 96px;
     display: flex;
     flex-direction: column;
-    gap: 56px;
+}
+
+.title-small {
+    display: none;
 }
 
 /* PROJECT HEADING */
@@ -61,7 +64,6 @@
 .project-body {
     display: flex;
     flex-direction: column;
-    gap: 48px;
 }
 
 .project-body ul,
@@ -75,23 +77,42 @@ ol {
     opacity: 0.95;
 }
 
+.project-abstract {
+    margin: 112px 0;
+}
+
+/* Sections */
 .section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    margin-bottom: 96px;
 }
 
-.section h2 {
-    margin-bottom: 2px;
+.section-title {
+    margin-bottom: 24px;
 }
 
+/* Subsections */
 .subsection {
-    margin-top: 8px;
+    margin-bottom: 48px;
+}
+
+.subsection-title {
+    margin-bottom: 16px;
+}
+
+.subsection-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 /* FIGURE ARRANGEMENTS */
-figure {
-    margin: 24px 0;
+.figure-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
 }
 
 figure img {
@@ -111,36 +132,131 @@ figcaption {
     color: var(--color-text-secondary);
 }
 
-.figure-grid-3 {
+.grid_2_1fr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    align-items: stretch;
+}
+
+.grid_3_1fr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     align-items: stretch;
-    margin: 24px 0;
 }
 
-.figure-grid-2_1-2 {
+.grid_2_1fr_2fr {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 16px;
     align-items: stretch;
-    margin: 24px 0;
 }
 
-.figure-grid-2_1-2 figure {
+.grid_2_1fr_2fr figure {
     width: 100%;
     height: 100%;
-    margin: 0;
     overflow: hidden;
     display: block;
 }
 
-.figure-grid-2_1-2 figure img {
+.grid_2_1fr_2fr figure img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
     object-position: center;
+}
+
+/* FEATURES */
+.feature {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-fill-surface);
+    padding: 32px;
+    align-items: flex-start;
+    gap: 48px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.feature-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 48%;
+}
+
+.feature-description-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.feature img {
+    width: 23em;
+    align-self: flex-start;
+}
+
+/* Features in column */
+.feature-column {
+    flex-direction: column;
+    gap: 32px;
+}
+
+.feature-column .feature-description {
+    max-width: 100%;
+}
+
+/* PROCESS CARDS */
+.process-card-group {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.process-card {
+    background-color: var(--color-fill-background-invert);
+    border-top: 1px solid var(--color-border-primary-10);
+    border-bottom: 1px solid var(--color-border-primary-10);
+    border-left: 1px solid var(--color-border-primary-10);
+    border-right: none;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.process-card-group>.process-card:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.process-card-group>.process-card:last-child {
+    border-right: 1px solid var(--color-border-primary-10);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.process-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* KPIs */
+.kpi-card {
+    background-color: var(--color-fill-surface);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    min-width: 160px;
 }
 
 /* NEXT PROJECT SECTION */
@@ -223,6 +339,18 @@ figcaption {
     .project-description-small {
         display: block;
     }
+    
+    .section-title {
+        margin-bottom: 16px;
+    }
+
+    .title-large {
+        display: none;
+    }
+
+    .title-small {
+        display: block;
+    }
 
     .project-content {
         margin-bottom: 112px;
@@ -256,23 +384,69 @@ figcaption {
         min-height: 16rem;
     }
 
-    .figure-grid-3 {
+    .grid_2_1fr {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .figure-grid-2_1-2 {
+    .grid_3_1fr {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .figure-grid-2_1-2 figure {
+    .grid_2_1fr_2fr {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .grid_2_1fr_2fr figure {
         height: auto;
     }
 
-    .figure-grid-2_1-2 figure img {
+    .grid_2_1fr_2fr figure img {
         height: auto;
         object-fit: contain;
+    }
+
+    /* PROCESS CARDS */
+    .process-card-group {
+        flex-direction: column;
+    }
+
+    .process-card {
+        border-bottom: none;
+        border-right: 1px solid var(--color-border-primary-10);
+    }
+
+    .process-card-group>.process-card:first-child {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+    }
+
+    .process-card-group>.process-card:last-child {
+        border-bottom: 1px solid var(--color-border-primary-10);
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 0;
+    }
+
+    /* FEATURES */
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature img, .grid_3_1fr {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .feature-description {
+        max-width: 100%;
+    }
+
+    /* LAYOUT */
+    .flex-direction-row {
+        flex-direction: column;
     }
 }
 
