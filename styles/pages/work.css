@@ -1,6 +1,6 @@
 .project-content {
     margin-top: 160px;
-    margin-bottom: 96px;
+    margin-bottom: 42px;
     display: flex;
     flex-direction: column;
 }
@@ -85,7 +85,7 @@ ol {
 .section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 96px;
+    margin-bottom: 88px;
 }
 
 .section-title {
@@ -168,6 +168,14 @@ figcaption {
     object-position: center;
 }
 
+.grid-item-full {
+    grid-column: 1 / -1;
+}
+
+.grid-item-span-2 {
+    grid-column: span 2;
+}
+
 /* FEATURES */
 .feature {
     display: flex;
@@ -195,8 +203,11 @@ figcaption {
 }
 
 .feature img {
-    width: 23em;
     align-self: flex-start;
+}
+
+.feature .feature-mobile-screen {
+    width: 23em;
 }
 
 /* Features in column */
@@ -295,6 +306,66 @@ figcaption {
     min-height: 20rem;
 }
 
+/* SLIDESHOW */
+.image-slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.image-slideshow .slideshow-view {
+    display: flex;
+    width: 100%;
+    transition: transform 480ms cubic-bezier(.2, .9, .2, 1);
+    will-change: transform;
+}
+
+.image-slideshow .slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-slideshow .slideshow-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms ease;
+}
+
+.image-slideshow:hover .slideshow-controls {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Indicators (dots) below the slideshow */
+.slideshow-indicators {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.slideshow-indicators .indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-primary-25);
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+.slideshow-indicators .indicator.active {
+    background: var(--color-border-primary-25);
+    border: 1px solid transparent;
+}
+
 /* ANIMATIONS */
 /* Reveal animation base */
 .reveal {
@@ -339,7 +410,7 @@ figcaption {
     .project-description-small {
         display: block;
     }
-    
+
     .section-title {
         margin-bottom: 16px;
     }
@@ -434,7 +505,8 @@ figcaption {
         flex-direction: column;
     }
 
-    .feature img, .grid_3_1fr {
+    .feature img,
+    .grid_3_1fr {
         width: 100%;
         height: auto;
         object-fit: contain;
@@ -442,6 +514,11 @@ figcaption {
 
     .feature-description {
         max-width: 100%;
+    }
+
+    /* SLIDESHOW */
+    .image-slideshow .slideshow-controls {
+        opacity: 1;
     }
 
     /* LAYOUT */

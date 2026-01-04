@@ -57,3 +57,69 @@
         }
     });
 })();
+
+// Slideshow integration for image carousels used in project pages
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        document.querySelectorAll('.image-slideshow').forEach((container) => {
+            const track = container.querySelector('.slideshow-view');
+            const slides = Array.from(container.querySelectorAll('.slide'));
+            const prevBtn = container.querySelector('.slideshow-prev');
+            const nextBtn = container.querySelector('.slideshow-next');
+            let idx = slides.findIndex(s => s.classList.contains('active'));
+            if (idx < 0) idx = 0;
+
+            // create indicators if missing
+            let indicators = container.querySelector('.slideshow-indicators');
+            if (!indicators) {
+                indicators = document.createElement('div');
+                indicators.className = 'slideshow-indicators';
+                // place indicators after the track
+                if (track && track.parentNode) track.parentNode.insertBefore(indicators, track.nextSibling);
+                else container.appendChild(indicators);
+            }
+
+            // build indicator buttons
+            indicators.innerHTML = '';
+            slides.forEach((s, si) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'indicator';
+                btn.setAttribute('aria-label', `Go to slide ${si + 1}`);
+                btn.dataset.index = String(si);
+                btn.addEventListener('click', () => {
+                    idx = si;
+                    update();
+                });
+                indicators.appendChild(btn);
+            });
+
+            const indicatorButtons = Array.from(indicators.querySelectorAll('.indicator'));
+
+            const update = () => {
+                const x = -idx * 100;
+                if (track) track.style.transform = `translateX(${x}%)`;
+                slides.forEach((s, si) => s.setAttribute('aria-hidden', si !== idx));
+                indicatorButtons.forEach((b, bi) => b.classList.toggle('active', bi === idx));
+            };
+
+            const prev = () => { idx = (idx - 1 + slides.length) % slides.length; update(); };
+            const next = () => { idx = (idx + 1) % slides.length; update(); };
+
+            prevBtn && prevBtn.addEventListener('click', prev);
+            nextBtn && nextBtn.addEventListener('click', next);
+
+            container.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') { prev(); e.preventDefault(); }
+                if (e.key === 'ArrowRight') { next(); e.preventDefault(); }
+            });
+
+            if (!container.hasAttribute('tabindex')) container.tabIndex = 0;
+
+            update();
+        });
+    } catch (e) {
+        // Fail quietly
+    }
+});
+
