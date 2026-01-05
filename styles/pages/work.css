@@ -536,10 +536,6 @@ figcaption {
         opacity: 0 !important;
         pointer-events: none !important;
     }
-
-    .slideshow-indicators {
-        margin-top: 8px;
-    }
 }
 
 /* Respect user's reduced motion preference */

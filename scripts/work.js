@@ -166,14 +166,57 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (e.pointerId && container.releasePointerCapture) {
                         try { container.releasePointerCapture(e.pointerId); } catch (err) {}
                     }
-                    if (track) track.style.transition = '';
+
+                    // Respect reduced motion preference
+                    const prefersReduced = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                    if (track) {
+                        // Restore transition for the snap animation unless user prefers reduced motion
+                        track.style.transition = prefersReduced ? 'none' : 'transform 360ms cubic-bezier(.2,.9,.2,1)';
+                        // Force reflow so the browser acknowledges the style change before updating transform
+                        // eslint-disable-next-line no-unused-expressions
+                        track.offsetHeight;
+                    }
+
                     const finalPercent = lastPercent;
 
-                    // Use RAF so the browser applies the restored transition and we get a smooth snap
+                    // Helper to perform a reliable snap animation using WA API if available
+                    const performSnap = (toIndex) => {
+                        const targetX = -toIndex * 100;
+                        const fromX = -idx * 100 + finalPercent;
+
+                        // If user prefers reduced motion, jump immediately
+                        if (prefersReduced) {
+                            idx = toIndex;
+                            update();
+                            return;
+                        }
+
+                        if (track && track.animate) {
+                            const anim = track.animate([
+                                { transform: `translateX(${fromX}%)` },
+                                { transform: `translateX(${targetX}%)` }
+                            ], { duration: 360, easing: 'cubic-bezier(.2,.9,.2,1)', fill: 'forwards' });
+                            anim.onfinish = () => {
+                                idx = toIndex;
+                                // explicitly set final transform and clear animation
+                                if (track) {
+                                    track.style.transform = `translateX(${targetX}%)`;
+                                    track.getAnimations().forEach(a => a.cancel());
+                                }
+                                update();
+                            };
+                        } else {
+                            // fallback: set transform and rely on CSS transition
+                            idx = toIndex;
+                            update();
+                        }
+                    };
+
                     requestAnimationFrame(() => {
-                        if (finalPercent > 20) { prev(); }
-                        else if (finalPercent < -20) { next(); }
-                        else { update(); }
+                        if (finalPercent > 20) { performSnap(Math.max(0, idx - 1)); }
+                        else if (finalPercent < -20) { performSnap(Math.min(slides.length - 1, idx + 1)); }
+                        else { performSnap(idx); }
                     });
                 }
 
@@ -212,7 +255,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 container.addEventListener('touchend', function () {
                     if (!isDragging) return;
                     isDragging = false;
-                    if (track) track.style.transition = '';
+
+                    const prefersReduced = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                    if (track) {
+                        track.style.transition = prefersReduced ? 'none' : 'transform 360ms cubic-bezier(.2,.9,.2,1)';
+                        track.offsetHeight;
+                    }
+
                     const finalPercent = lastPercent;
                     requestAnimationFrame(() => {
                         if (finalPercent > 20) { prev(); }
