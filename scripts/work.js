@@ -148,7 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dy = e.clientY - startY;
                     // If vertical scrolling is dominant, don't treat as horizontal swipe
                     if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 6) return;
-                    const percent = (dx / getWidth()) * 100;
+                    let percent = (dx / getWidth()) * 100;
+
+                    // Resistance at the edges: reduce movement when trying to swipe past ends
+                    if ((idx === 0 && percent > 0) || (idx === slides.length - 1 && percent < 0)) {
+                        percent = percent * 0.35;
+                    }
+
                     lastPercent = percent;
                     if (track) track.style.transform = `translateX(${ -idx * 100 + percent }%)`;
                     e.preventDefault();
@@ -161,10 +167,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         try { container.releasePointerCapture(e.pointerId); } catch (err) {}
                     }
                     if (track) track.style.transition = '';
-                    // threshold: 20% of width
-                    if (lastPercent > 20) { prev(); }
-                    else if (lastPercent < -20) { next(); }
-                    else { update(); }
+                    const finalPercent = lastPercent;
+
+                    // Use RAF so the browser applies the restored transition and we get a smooth snap
+                    requestAnimationFrame(() => {
+                        if (finalPercent > 20) { prev(); }
+                        else if (finalPercent < -20) { next(); }
+                        else { update(); }
+                    });
                 }
 
                 // Pointer events
@@ -190,7 +200,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dx = e.touches[0].clientX - startX;
                     const dy = e.touches[0].clientY - startY;
                     if (Math.abs(dy) > Math.abs(dx) && Math.abs(dy) > 6) return;
-                    const percent = (dx / getWidth()) * 100;
+                    let percent = (dx / getWidth()) * 100;
+                    if ((idx === 0 && percent > 0) || (idx === slides.length - 1 && percent < 0)) {
+                        percent = percent * 0.35;
+                    }
                     lastPercent = percent;
                     if (track) track.style.transform = `translateX(${ -idx * 100 + percent }%)`;
                     e.preventDefault();
@@ -200,9 +213,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (!isDragging) return;
                     isDragging = false;
                     if (track) track.style.transition = '';
-                    if (lastPercent > 20) { prev(); }
-                    else if (lastPercent < -20) { next(); }
-                    else { update(); }
+                    const finalPercent = lastPercent;
+                    requestAnimationFrame(() => {
+                        if (finalPercent > 20) { prev(); }
+                        else if (finalPercent < -20) { next(); }
+                        else { update(); }
+                    });
                 });
             })();
         });
