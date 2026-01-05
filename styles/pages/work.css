@@ -528,6 +528,20 @@ figcaption {
     }
 }
 
+/* Hide prev/next controls on touch-first devices (use swipe instead) */
+@media (hover: none),
+(pointer: coarse) {
+    .image-slideshow .slideshow-controls {
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    .slideshow-indicators {
+        margin-top: 8px;
+    }
+}
+
 /* Respect user's reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
 
