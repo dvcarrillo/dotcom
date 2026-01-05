@@ -352,6 +352,7 @@ figcaption {
     gap: 8px;
     justify-content: center;
 }
+
 .slideshow-indicators .indicator {
     width: 8px;
     height: 8px;
@@ -361,6 +362,7 @@ figcaption {
     padding: 0;
     cursor: pointer;
 }
+
 .slideshow-indicators .indicator.active {
     background: var(--color-border-primary-25);
     border: 1px solid transparent;
@@ -477,6 +479,10 @@ figcaption {
     .grid_2_1fr_2fr figure img {
         height: auto;
         object-fit: contain;
+    }
+
+    .grid-item-span-2 {
+        grid-column: 1 / -1;
     }
 
     /* PROCESS CARDS */
