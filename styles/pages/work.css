@@ -522,11 +522,6 @@ figcaption {
         max-width: 100%;
     }
 
-    /* SLIDESHOW */
-    .image-slideshow .slideshow-controls {
-        opacity: 1;
-    }
-
     /* LAYOUT */
     .flex-direction-row {
         flex-direction: column;
