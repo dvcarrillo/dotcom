@@ -210,12 +210,17 @@
 }
 
 .works-item .works-item-cover:active {
+    transition: background-color 0.15s ease-in-out;
+}
+
+.works-item .works-item-cover:active {
     background-color: var(--color-interaction-fill-surface-active);
 }
 
 .works-item .works-item-cover:active img {
-    transform: translateY(8px);
+    transform: translateY(10px);
     box-shadow: 0 4px 24px 2px rgba(0, 0, 0, 0.15);
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-item .works-item-cover {
